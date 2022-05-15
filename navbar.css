@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+    .dining,.facilities,.events,.gallery{
+    float: right;
+    font-family: 'Montserrat Alternates', cursive;
+    font-size: 14px;
+    padding-top: 25px;
+    }
+  
+    li a {
+      color: white;
+      text-align: center;
+      padding: 18px;
+      text-decoration: none;
+    }
+  
+  
+
+  li .home {
+      float: left;
+      font-size: 30px;
+      color: #FFE600;
+      font-family: 'Lobster', cursive;
+  }
+
+  .underline-hover-effect {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0.25rem;
+  }
+
+  .underline-hover-effect::before {
+    content: "";
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFE600;
+    transition: width 0.5s ease-out;
+  }
+
+  .underline-hover-effect:hover::before {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+  }
