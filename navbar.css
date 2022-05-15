@@ -16,6 +16,7 @@ ul {
     font-family: 'Montserrat Alternates', cursive;
     font-size: 14px;
     padding-top: 25px;
+    padding-left: 20px;
     }
   
     li a {
@@ -30,7 +31,7 @@ ul {
   li .home {
       float: left;
       font-size: 30px;
-      color: #FFE600;
+      
       font-family: 'Lobster', cursive;
   }
 
@@ -48,7 +49,8 @@ ul {
     width: 0;
     height: 2px;
     background-color: #FFE600;
-    transition: width 0.5s ease-out;
+    transition: width 0.37s ease-out;
+    background-image: linear-gradient(to right, #c18c00, #ffcb00, #fdea1d, #f0ffae, #fdea1d, #ffcb00, #c18c00);
   }
 
   .underline-hover-effect:hover::before {
@@ -57,12 +59,12 @@ ul {
     right: 0;
   }
 
-  video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.8;
+  .gradient-text {
+    background-image: linear-gradient(to left, #c18c00, #ffcb00, #fdea1d, #fdea1d, #ffcb00, #c18c00);
+    background-clip: text;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
   }
