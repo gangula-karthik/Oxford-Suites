@@ -11,7 +11,7 @@ ul {
     background-color: #333;
   }
   
-    .dining,.facilities,.events,.gallery{
+    .dining,.facilities,.events,.gallery,.rooms,.contact{
     float: right;
     font-family: 'Montserrat Alternates', cursive;
     font-size: 14px;
