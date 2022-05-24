@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 
 
@@ -13,9 +13,10 @@ nav{
   top: 0;
   position: sticky;
   z-index: 3;
+  
 }
 
-ul {
+nav ul {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
@@ -94,7 +95,6 @@ video {
   top: 0;
   height: 100%;
   object-fit: cover;
-  object-position: center;
 }
 
 .text {
@@ -165,9 +165,51 @@ video {
   justify-content: center;
 }
 
-/*scroll down*/
-.page {
-  height: 160vh;
-  background-color: #efefef;
-  background-size: cover;
+/*scroll*/
+.content_1 {
+  position: static;
+  display: flex; 
+  justify-content: center;
+  background-color: #837b7b;
+  height: 300px;
+  width: 850px;
+  margin: auto;
+  padding: 30px;
+  margin-top: 30%;
+  border-radius: 20px;
+  font-family: 'Poppins', "cursive";
+  font-weight: 10000;
 }
+
+.content_2   {
+  position: static;
+  display: flex; 
+  justify-content: center;
+  background-color: #837b7b;
+  height: 300px;
+  width: 850px;
+  margin: auto;
+  padding: 30px;
+  margin-top: 10%;
+  border-radius: 20px;
+  font-family: 'Poppins', "cursive";
+  font-weight: 10000;
+}
+
+.content_3  {
+  position: static;
+  display: flex; 
+  justify-content: center;
+  background-color: #837b7b;
+  height: 300px;
+  width: 850px;
+  margin: auto;
+  padding: 30px;
+  margin-top: 10%;
+  border-radius: 20px;
+  font-family: 'Poppins', "cursive";
+  font-weight: 10000;
+  margin-bottom: 10%;
+}
+
+
