@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining Reservation</title>
+</head>
+<body>
+    <h1>Dining Reservation Form</h1>
+    <form>
+        <fieldset>
+            <label>First Name </label>
+            <input placeholder="First_name" type="text" required><br>
+            <label>Last Name </label>
+            <input placeholder="Last_name" type="text" required><br> 
+            <label>Email </label>
+            <input placeholder="Email" type="email" required><br> 
+            <label>Phone number </label>
+            <select>
+                <option>🇸🇬 +65</option>
+                <option>🇺🇸 +1</option>
+                <option>🇦🇪 +971</option>
+                <option>🇬🇧 +44</option>
+                <option>🇯🇵 +81</option>
+                <option>🇨🇳 +86</option>
+                <option>🇮🇳 +91</option>
+                <option>🇦🇺 +66</option>
+                <option>🇲🇾 +60</option>
+                <option>🇲🇫 +33</option>
+                <option>🇵🇭 +63</option>
+                <option>🇻🇳 +84</option>
+            </select><input placeholder="Phone_number" type="tel" minlength="9" maxlength="19" required><br> 
+            Restaurant <select required>
+                <option value="" disabled selected hidden>choose a restaurant</option>
+                <option>Restaurant #1</option>
+                <option>Restaurant #2</option>
+                <option>Restaurant #3</option>
+            </select> <br> 
+            Reservation Type <select required>
+                <option disabled hidden selected>What is the reservation type</option>
+                <option>VIP/mezzanine</option>
+                <option>Birthday/Anniversary</option>
+                <option>Wedding</option>
+                <option>Corporate</option>
+                <option>Other</option>
+            </select><br>
+            Special Requests <input placeholder="Special Requests"><br> 
+            Date <input placeholder="Date" type="date" required><br> 
+            Time <input placeholder="Time" type="time" required><br> 
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
