@@ -8,6 +8,12 @@ body{
     color: white;
 }
 
+h1 {
+    font-family:'Source Serif Pro', serif;
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
 nav{
     width: 100%;
     top: 0;
@@ -89,26 +95,90 @@ nav{
 
   .form_page{
       padding-top: 40px;
-      text-align: center;
       overflow: hidden;
+  }
+  table{
+    margin: 0 auto;
   }
 
   input{
       border: none;
       height: 18px;
+      border-radius: 10px;
+      height: 30px;
+      width: 229.5px;
+      background-color: #454545;
+      color: white;
+      margin: auto;
   }
-  
+
+  select:first-child{
+      height: 30px;
+      border-radius: 10px 0px 0px 10px;
+      color: rgb(137, 137, 137);
+      background-color:#454545;
+      border: none;
+      position: relative;
+      top: 0.6px;
+  }
+
+  select:last-child{
+    border-radius: 10px;
+    width: 229.5px;
+    background-color:#454545;
+    border: none;
+    color: rgb(137, 137, 137);
+    text-align: center;
+  }
+  input[type="tel" i]{
+    border-radius: 0px 10px 10px 0px;
+    width: 159px;
+  }
+
+  input[type="date" i]{
+    filter: invert(0.75);
+  }
+
+
+  ::-webkit-input-placeholder{
+      text-align: center;
+  }
+
+  label{
+    float: left;
+    margin-right: 40px;
+  }
+
   input[type="submit" i]{
       background-color: #fdea1d;
       height: 40px;
-      width: 200px;
+      width:  375px;
       border-radius: 70px;
+      color: black;
+      font-weight: 800;
+      position: relative;
+      left: 520px;
+      margin: 30px;
   }
+
+  input[type="submit" i]:hover{
+    background-color: #ffff00;
+    height: 40px;
+    width: 375px;
+    border-radius: 70px;
+    color: black;
+    font-weight: 800;
+    position: relative;
+    left: 520px;
+    margin: 30px;
+}
 
   .form_page h1 {
       font-weight: 900;
+      text-align: center;
   }
   fieldset{
       border: none;
       line-height: 60px;
   }
+
