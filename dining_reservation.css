@@ -115,7 +115,7 @@ nav{
   select:first-child{
       height: 30px;
       border-radius: 10px 0px 0px 10px;
-      color: rgb(137, 137, 137);
+      color: rgb(255, 255, 255);
       background-color:#454545;
       border: none;
       position: relative;
@@ -127,7 +127,7 @@ nav{
     width: 229.5px;
     background-color:#454545;
     border: none;
-    color: rgb(137, 137, 137);
+    color: rgb(255, 255, 255);
     text-align: center;
   }
   input[type="tel" i]{
@@ -136,7 +136,16 @@ nav{
   }
 
   input[type="date" i]{
-    filter: invert(0.75);
+    color-scheme: dark;
+    filter: invert(0);
+  }
+  input[type="time" i]{
+    color-scheme: dark;
+    filter: invert(0);
+  }
+
+  select:required:invalid{
+    color: rgb(137, 137, 137);
   }
 
 
