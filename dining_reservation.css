@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+nav{
+    width: 100%;
+    top: 0;
+    position: sticky;
+    z-index: 3;
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgb(21, 21, 21);
+  }
+  
+    .dining,.facilities,.events,.gallery,.rooms,.contact{
+    float: right;
+    font-family: "Poppins";
+    font-size: 14px;
+    padding-top: 25px;
+    padding-left: 20px; 
+    }
+  
+    li a {
+      color: white;
+      text-align: center;
+      padding: 18px;
+      text-decoration: none;
+    }
+  
+  
+  
+  li .home {
+      float: left;
+      font-size: 30px;
+      font-family: 'DM Serif Display', serif;
+  }
+  
+  .underline-hover-effect {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0.25rem;
+  }
+  
+  .underline-hover-effect::before {
+    content: "";
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFE600;
+    transition: width 0.37s ease-out;
+    background-image: linear-gradient(to right, #c18c00, #ffcb00, #fdea1d, #f0ffae, #fdea1d, #ffcb00, #c18c00);
+  }
+  
+  .underline-hover-effect:hover::before {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .gradient-text {
+    background-image: linear-gradient(to left, #c18c00, #ffcb00, #fdea1d, #fdea1d, #ffcb00, #c18c00);
+    background-clip: text;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+  }
+  
+  
+  /*removing the scroll bar*/
+  ::-webkit-scrollbar{
+    display:none;
+  }
+
+  .form_page{
+      padding-top: 40px;
+      text-align: center;
+      overflow: hidden;
+  }
+
+  input{
+      border: none;
+      height: 18px;
+  }
+  
+  input[type="submit" i]{
+      background-color: #fdea1d;
+      height: 40px;
+      width: 200px;
+      border-radius: 70px;
+  }
+
+  .form_page h1 {
+      font-weight: 900;
+  }
+  fieldset{
+      border: none;
+      line-height: 60px;
+  }
