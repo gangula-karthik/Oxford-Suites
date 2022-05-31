@@ -9,7 +9,7 @@ body{
 }
 
 h1 {
-    font-family:'Source Serif Pro', serif;
+  font-family: 'Lobster', cursive;
     font-size: 60px;
     margin-bottom: 40px;
 }
@@ -50,7 +50,7 @@ nav{
   li .home {
       float: left;
       font-size: 30px;
-      font-family: 'DM Serif Display', serif;
+      font-family: 'Lobster', cursive;
   }
   
   .underline-hover-effect {
@@ -110,6 +110,7 @@ nav{
       background-color: #454545;
       color: white;
       margin: auto;
+      text-align: center;
   }
 
   select:first-child{
@@ -165,9 +166,9 @@ nav{
       border-radius: 70px;
       color: black;
       font-weight: 800;
-      position: relative;
-      left: 520px;
-      margin: 30px;
+      align-content: center;
+      margin-top: 30px;
+      
   }
 
   input[type="submit" i]:hover{
@@ -177,9 +178,9 @@ nav{
     border-radius: 70px;
     color: black;
     font-weight: 800;
-    position: relative;
-    left: 520px;
-    margin: 30px;
+    align-content: center;
+    margin-top: 30px;
+    
 }
 
   .form_page h1 {
