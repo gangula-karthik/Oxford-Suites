@@ -9,8 +9,8 @@ body{
 }
 
 h1 {
-  font-family: 'Lobster', cursive;
-    font-size: 60px;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 40px;
     margin-bottom: 40px;
 }
 
@@ -32,7 +32,7 @@ nav{
   
     .dining,.facilities,.events,.gallery,.rooms,.contact{
     float: right;
-    font-family: "Poppins";
+    font-family: "Inter", sans-serif; 
     font-size: 14px;
     padding-top: 25px;
     padding-left: 20px; 
@@ -50,7 +50,7 @@ nav{
   li .home {
       float: left;
       font-size: 30px;
-      font-family: 'Lobster', cursive;
+      font-family: 'Playfair Display SC', serif;
   }
   
   .underline-hover-effect {
@@ -191,4 +191,3 @@ nav{
       border: none;
       line-height: 60px;
   }
-
