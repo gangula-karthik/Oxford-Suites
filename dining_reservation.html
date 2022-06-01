@@ -7,14 +7,13 @@
     <link rel="stylesheet" href="dining_reservation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,700&display=swap" rel="stylesheet">
     <title>Dining Reservation</title>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a class="gradient-text home" href="#home">Hotel_Name</a></li>
+            <li><a class="gradient-text home" href="#home">OXFORD SUITES</a></li>
             <li><a class="underline-hover-effect contact" href="#contact">Contact Us</a></li>
             <li><a class="underline-hover-effect events" href="#events">Events</a></li>
             <li><a class="underline-hover-effect facilities" href="#facilities">Facilities</a></li>
@@ -28,20 +27,21 @@
     <form>
         <fieldset>
             <table>
+                <tr></tr>
                 <tr>
-                    <td><label>First Name </label></td>
+                    <td><label>First Name <span style= "color:red;"> *</span></label></td>
                     <td><input placeholder="First_name" type="text" required></td>
                 </tr>
                 <tr>
-                    <td><label>Last Name </label></td>
+                    <td><label>Last Name <span style= "color:red;"> *</span></label></td>
                     <td><input placeholder="Last_name" type="text" required></td>
                 </tr>
                 <tr>
-                    <td><label>Email </label></td>
+                    <td><label>Email <span style= "color:red;"> *</span></label></td>
                     <td><input placeholder="Email" type="email" required></td>
                 </tr>
                 <tr>
-                    <td><label>Phone number </label></td>
+                    <td><label>Phone number <span style= "color:red;">*</span> </label></td>
                     <td><select>
                         <option>🇸🇬 +65</option>
                         <option>🇺🇸 +1</option>
@@ -58,7 +58,7 @@
                     </select><input placeholder="Phone_number" type="tel" minlength="9" maxlength="19" required></td>
                 </tr>
                 <tr>
-                    <td><label>Restaurant</label></td>
+                    <td><label>Restaurant<span style= "color:red;"> *</span></label></td>
                     <td><select required>
                         <option value="" disabled selected hidden>Choose a restaurant</option>
                         <option>La Maison 1888</option>
@@ -67,7 +67,7 @@
                     </select></td>
                 </tr>
                 <tr>
-                    <td><label>Reservation Type</label></td>
+                    <td><label>Reservation Type <span style= "color:red;">*</span></label></td>
                     <td><select required>
                         <option value="" disabled hidden selected>What is the reservation type</option>
                         <option>VIP/mezzanine</option>
@@ -78,11 +78,11 @@
                     </select></td>
                 </tr>
                 <tr>
-                    <td><label>Date</label></td>
+                    <td><label>Date <span style= "color:red;">*</span></label></td>
                     <td><input placeholder="Date" type="date" required></td>
                 </tr>
                 <tr>
-                    <td><label>Time</label></td>
+                    <td><label>Time <span style= "color:red;">*</span></label></td>
                     <td><input placeholder="Time" type="time" required></td>
                 </tr>
                 <tr>
