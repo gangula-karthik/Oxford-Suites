@@ -28,7 +28,7 @@ nav ul {
 
   .dining,.facilities,.events,.gallery,.rooms,.contact{
   float: right;
-  font-family: 'Inter', serif;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   padding-top: 30px;
   padding-left: 20px; 
@@ -172,7 +172,7 @@ video {
 
 /*scroll*/
 
-.cards > .card {
+.restaurant_cards > .card {
   --padding: 1rem;
   background: white;
   border: 1px solid rgb(133, 133, 133);
@@ -181,12 +181,12 @@ video {
   max-width: 850px;
   margin: 0 auto;
   overflow: hidden;
-  margin-top: 24%;
+  margin-top: 30%;
   margin-bottom: 5%;
 }
 
-.cards > .card ~ .card {
-  margin-top: 5%;
+.restaurant_cards > .card ~ .card {
+  margin-top: 2%;
 }
 
 
@@ -230,8 +230,33 @@ video {
   padding-top: 0;
 }
 
+.review_card_1{
+  max-width: 700px;
+  max-height: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.review_card_1.card-shadow {
+  border: none;
+  box-shadow: 0 2px 5px 0;
+}
+
+.review_card_1 > .material-symbols-outlined{
+  background-image: linear-gradient(to right, #b38300, #e3b600, #f1dd00, #f1dd00, #e3b600, #b38300);
+  background-clip: text;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
 .btn {
-  --color: hsl(59, 100%, 60%);
+  --color: #ffff00;
   background-color: var(--color);
   color: rgb(0, 0, 0);
   border: none;
@@ -241,14 +266,18 @@ video {
   border-radius:100px;
   float: right;
   margin-bottom: 2%;
+  width: 130px;
+  height: 45px;
 }
 
 .btn:hover, .btn:focus{
-  background: hsl(59, 100%, 46%);
+  background: #e5ce00;
+  transition: 550ms smooth ease-in-out;
+  border: 1px solid black;
 }
 
-.btn + .btn {
-  margin-right: 1.5rem;
+.btn {
+  margin-right: 25px;
 }
 
 .times {
@@ -261,12 +290,10 @@ video {
   color: #ff4338;
 }
 
-.introduction_restaurant {
-  margin: auto 0;
-  margin-top: 00px;
-
+.times_list{
+  position: relative;
+  left: 2.3em;
 }
-
 
 
 .footer {
@@ -336,7 +363,7 @@ video {
   max-width: max-content;
   background-color: #ffff00;
   border-radius: 100px;
-  color: #000000;
+  color: rgb(0, 0, 0);
   line-height: 0;
   margin: 0.6em 0;
   font-size: 1rem;
@@ -353,7 +380,7 @@ video {
   max-width: max-content;
   background-color: #e5ce00;
   border-radius: 100px;
-  color:black;
+  color:rgb(0, 0, 0);
   line-height: 0;
   margin: 0.6em 0;
   font-size: 1rem;
