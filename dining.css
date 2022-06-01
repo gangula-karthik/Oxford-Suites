@@ -1,11 +1,12 @@
-* {
+*{
   margin: 0;
   padding: 0;
 }
 
+
 body {
   background-color: rgb(255, 255, 255);
-  font-family: "Poppins", cursive;
+  font-family: 'DM Serif Display', serif;
 }
 
 
@@ -27,10 +28,14 @@ nav ul {
 
   .dining,.facilities,.events,.gallery,.rooms,.contact{
   float: right;
-  font-family: "Poppins";
+  font-family: 'Inter', serif;
   font-size: 14px;
-  padding-top: 25px;
+  padding-top: 30px;
   padding-left: 20px; 
+  }
+
+  div.contact{
+    padding-left: 25px;
   }
 
   li a {
@@ -45,7 +50,8 @@ nav ul {
 li .home {
     float: left;
     font-size: 30px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: bolder;
 }
 
 .underline-hover-effect {
@@ -83,7 +89,7 @@ li .home {
 }
 
 
-/*removing the scroll bar*/
+/*removing the x bar*/
 ::-webkit-scrollbar{
   display:none;
 }
@@ -97,14 +103,11 @@ video {
   object-fit: cover;
 }
 
-.text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .text h1{
-  font-family: "Poppins", sans-serif;
+  position: relative;
+  font-family:"Inter", sans-serif;
+  font-weight: bold;
   font-size: 10em;
   text-align: center;
   color: #ffff;
@@ -168,51 +171,102 @@ video {
 }
 
 /*scroll*/
-.content_1 {
-  position: static;
-  display: flex; 
-  justify-content: center;
-  background-color: #837b7b;
-  height: 300px;
-  width: 850px;
-  margin: auto;
-  padding: 30px;
-  margin-top: 20%;
-  border-radius: 20px;
-  font-family: 'Poppins', "cursive";
-  font-weight: 10000;
+
+.cards > .card {
+  --padding: 1rem;
+  background: white;
+  border: 1px solid rgb(133, 133, 133);
+  border-radius: 0.5rem;
+  font-size: 20px;
+  max-width: 850px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 24%;
+  margin-bottom: 5%;
 }
 
-.content_2   {
-  position: static;
-  display: flex; 
-  justify-content: center;
-  background-color: #837b7b;
-  height: 300px;
-  width: 850px;
-  margin: auto;
-  padding: 30px;
-  margin-top: 10%;
-  border-radius: 20px;
-  font-family: 'Poppins', "cursive";
-  font-weight: 10000;
+.cards > .card ~ .card {
+  margin-top: 5%;
 }
 
-.content_3  {
-  position: static;
-  display: flex; 
-  justify-content: center;
-  background-color: #837b7b;
-  height: 300px;
-  width: 850px;
-  margin: auto;
-  padding: 30px;
-  margin-top: 10%;
-  border-radius: 20px;
-  font-family: 'Poppins', "cursive";
-  font-weight: 10000;
-  margin-bottom: 10%;
+
+.card.card-shadow {
+  border: none;
+  box-shadow: 0 2px 5px 0;
 }
+
+.card-header.card-image {
+  overflow: hidden;
+  padding: 0;
+}
+
+.card-header.card-image > img {
+  display:block;
+  width: 100%;
+  max-height: 300px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  transition: 200ms transform ease-in-out;
+}
+
+.card:hover > .card-header.card-image > img{
+  transform: scale(1.025);
+}
+
+.card-header {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: var(--padding);
+  padding-bottom: 0;
+}
+.card-body {
+  font-size: 0.9rem;
+  padding: 0 var(--padding);
+}
+.card-footer{
+  margin-top: 1rem;
+  padding: var(--padding);
+  padding-top: 0;
+}
+
+.btn {
+  --color: hsl(59, 100%, 60%);
+  background-color: var(--color);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: .5em .75em;
+  border-radius: .5em;
+  cursor: pointer;
+  border-radius:100px;
+  float: right;
+  margin-bottom: 2%;
+}
+
+.btn:hover, .btn:focus{
+  background: hsl(59, 100%, 46%);
+}
+
+.btn + .btn {
+  margin-right: 1.5rem;
+}
+
+.times {
+  position: relative;
+  bottom: 5.7px;
+  left: 3px;
+}
+
+.material-symbols-outlined {
+  color: #ff4338;
+}
+
+.introduction_restaurant {
+  margin: auto 0;
+  margin-top: 00px;
+
+}
+
 
 
 .footer {
@@ -238,12 +292,21 @@ video {
 }
 
 .footer__logo {
-  font-family: 'Lobster', cursive;
+  font-family: 'Playfair Display SC', serif;
   font-size: 40px;
-  color:#ffe600;
 }
 
- a:link, a:hover, a:active, a:visited{
+.footer__logo a {
+  background-image: linear-gradient(to left, #c18c00, #ffcb00, #fdea1d, #fdea1d, #ffcb00, #c18c00);
+  background-clip: text;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+ .footer_logo a:link, a:hover, a:active, a:visited{
   text-decoration: none;
   color:#ffffff;
 }
@@ -257,6 +320,7 @@ video {
   font-weight: 400;
   font-size: 15px;
   color: white;
+  font-family: "Inter";
 }
 
 .footer address {
@@ -270,15 +334,15 @@ video {
   justify-content: center;
   height: 36px;
   max-width: max-content;
-  background-color: #FFE600;
+  background-color: #ffff00;
   border-radius: 100px;
   color: #000000;
   line-height: 0;
   margin: 0.6em 0;
   font-size: 1rem;
   padding: 0 1.3em;
-  transition-duration: 0.4s;
   cursor: pointer;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
 .footer__btn:hover {
@@ -287,13 +351,14 @@ video {
   justify-content: center;
   height: 36px;
   max-width: max-content;
-  background-color: #ffff00;
+  background-color: #e5ce00;
   border-radius: 100px;
   color:black;
   line-height: 0;
   margin: 0.6em 0;
   font-size: 1rem;
   padding: 0 1.3em;
+  font-family:  "Inter", Arial, Helvetica, sans-serif;
 }
 
 .footer__btn:active {
@@ -310,6 +375,7 @@ video {
   font-size: 1rem;
   padding: 0 1.3em;
   box-shadow: inset 0px 2px 2px 3px rgba(0, 0, 0, 0.25);
+  font-family:  "Inter", Arial, Helvetica, sans-serif;
 }
 
 /*other footer components*/
@@ -388,4 +454,5 @@ video {
     flex: 2 0px;
   }
 }
+
 
