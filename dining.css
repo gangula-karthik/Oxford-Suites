@@ -7,9 +7,10 @@
 body {
   background-color: rgb(255, 255, 255);
   font-family: 'DM Serif Display', serif;
+  overflow-x: hidden;
 }
 
-
+/* navigation bar */
 nav{
   width: 100%;
   top: 0;
@@ -94,6 +95,8 @@ li .home {
   display:none;
 }
 
+
+/* video background */
 video {
   position: absolute;
   width: 100%;
@@ -103,7 +106,7 @@ video {
   object-fit: cover;
 }
 
-
+/* text overlay on video background */
 .text h1{
   position: relative;
   font-family:"Inter", sans-serif;
@@ -170,8 +173,7 @@ video {
   justify-content: center;
 }
 
-/*scroll*/
-
+/*The different restaurants*/
 .restaurant_cards > .card {
   --padding: 1rem;
   background: white;
@@ -230,31 +232,7 @@ video {
   padding-top: 0;
 }
 
-.review_card_1{
-  max-width: 700px;
-  max-height: 200px;
-  margin: 0 auto;
-  padding: 20px;
-  margin-bottom: 10px;
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-
-.review_card_1.card-shadow {
-  border: none;
-  box-shadow: 0 2px 5px 0;
-}
-
-.review_card_1 > .material-symbols-outlined{
-  background-image: linear-gradient(to right, #b38300, #e3b600, #f1dd00, #f1dd00, #e3b600, #b38300);
-  background-clip: text;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-
+/* restaurant cards button */
 .btn {
   --color: #ffff00;
   background-color: var(--color);
@@ -267,7 +245,7 @@ video {
   float: right;
   margin-bottom: 2%;
   width: 130px;
-  height: 45px;
+  height: 40px;
 }
 
 .btn:hover, .btn:focus{
@@ -276,10 +254,7 @@ video {
   border: 1px solid black;
 }
 
-.btn {
-  margin-right: 25px;
-}
-
+/* time section of the restaurant cards */
 .times {
   position: relative;
   bottom: 5.7px;
@@ -296,6 +271,75 @@ video {
 }
 
 
+/* review cards by customers */
+
+.reviews_cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  gap: 4%;
+  padding: 40px;
+}
+
+
+.review_card_1{
+  max-width: 600px;
+  max-height: 200px;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+
+.review_card_1.card-shadow {
+  border: none;
+  box-shadow: 0 2px 5px 0;
+}
+
+.review_card_1 > .material-symbols-outlined{
+  background-image: linear-gradient(to right, #b38300, #e3b600, #f1dd00, #f1dd00, #e3b600, #b38300);
+  background-clip: text;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  font-size: 18px;
+}
+
+/* nearby restaurants options */
+.nearby_options {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  gap: 5%;
+  padding: 40px;
+}
+
+.nearby_restaurant{
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.nearby_restaurant.card-shadow{
+  border: none;
+  box-shadow: 0 2px 5px 0;
+}
+
+.nearby_restaurant.btn {
+  margin-right: 0px !important
+}
+
+
+
+/* footer of the website */
 .footer {
   display: flex;
   flex-flow: row wrap;
