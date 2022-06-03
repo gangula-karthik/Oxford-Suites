@@ -99,6 +99,7 @@ nav{
   }
   table{
     margin: 0 auto;
+    margin-bottom: 10%;
   }
 
   input{
@@ -160,27 +161,28 @@ nav{
   }
 
   input[type="submit" i]{
-      background-color: #fdea1d;
+    --color: #ffff00;
+    background-color: var(--color);
       height: 40px;
-      width:  375px;
+      width:  400px;
       border-radius: 70px;
       color: black;
       font-weight: 800;
-      align-content: center;
       margin-top: 30px;
-      
+      font-family: "Inter", sans-serif;
   }
 
   input[type="submit" i]:hover{
-    background-color: #ffff00;
+    background: #e5ce00;
     height: 40px;
-    width: 375px;
+    width: 400px;
     border-radius: 70px;
     color: black;
     font-weight: 800;
     align-content: center;
     margin-top: 30px;
-    
+    transition: 550ms smooth ease-in-out;
+    font-family: "Inter", sans-serif;
 }
 
   .form_page h1 {
