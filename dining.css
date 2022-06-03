@@ -5,18 +5,21 @@
 
 
 body {
-  background-color: rgb(255, 255, 255);
   font-family: 'DM Serif Display', serif;
   overflow-x: hidden;
+  background-color: whitesmoke;
 }
 
+h1 {
+  font-family: "Inter", sans-serif;
+  
+}
 /* navigation bar */
 nav{
   width: 100%;
   top: 0;
   position: sticky;
   z-index: 3;
-  
 }
 
 nav ul {
@@ -107,26 +110,33 @@ video {
 }
 
 /* text overlay on video background */
-.text h1{
-  position: relative;
+
+.landing-text {
+  display: grid;
+  z-index: 2;
+  grid-template-rows: 250px 250px;
+  grid-template-columns: 1fr;
+  gap: 5%;
+  justify-items: center;
+}
+.text1{
   font-family:"Inter", sans-serif;
   font-weight: bold;
-  font-size: 10em;
-  text-align: center;
+  font-size: 6em;
   color: #ffff;
   z-index: 2;
-  padding-top: 200px;
+  text-align: center;
+  margin-top: 10%;
 }
 
 .text2{
-  position: relative;
-  font-family:'Poppins', sans-serif;
-  font-weight: 100;
+  font-family:'Inter', sans-serif;
   font-size: 20px;
   text-align: center;
-  color: #ffff;
-  z-index: 2;
-  top: -90px;
+  color: rgb(255, 255, 255);
+  z-index: 2; 
+  margin-top: 10%;
+  font-weight: 100;
 }
 
 .header-overlay {
@@ -176,14 +186,13 @@ video {
 /*The different restaurants*/
 .restaurant_cards > .card {
   --padding: 1rem;
-  background: white;
+  background: rgb(255, 255, 255);
   border: 1px solid rgb(133, 133, 133);
   border-radius: 0.5rem;
   font-size: 20px;
   max-width: 850px;
   margin: 0 auto;
   overflow: hidden;
-  margin-top: 30%;
   margin-bottom: 5%;
 }
 
@@ -213,7 +222,7 @@ video {
 }
 
 .card:hover > .card-header.card-image > img{
-  transform: scale(1.025);
+  transform: scale(1.029);
 }
 
 .card-header {
@@ -225,7 +234,12 @@ video {
 .card-body {
   font-size: 0.9rem;
   padding: 0 var(--padding);
+  font-family: "Inter", sans-serif;
 }
+.card-body h1{
+  font-weight: bold;
+}
+
 .card-footer{
   margin-top: 1rem;
   padding: var(--padding);
@@ -244,8 +258,9 @@ video {
   border-radius:100px;
   float: right;
   margin-bottom: 2%;
-  width: 130px;
+  width: 160px;
   height: 40px;
+  font-family: "Inter", sans-serif;
 }
 
 .btn:hover, .btn:focus{
@@ -290,6 +305,8 @@ video {
   margin-bottom: 10px;
   border-radius: 0.5rem;
   overflow: hidden;
+  font-family: "Inter", sans-serif;
+  background-color: white;
 }
 
 
@@ -326,6 +343,9 @@ video {
   overflow: hidden;
   max-height: 300px;
   overflow-y: scroll;
+  gap: 3%;
+  font-family: "Inter", sans-serif;
+  background-color: white;
 }
 
 .nearby_restaurant.card-shadow{
