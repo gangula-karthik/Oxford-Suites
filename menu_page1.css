@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    top: 0;
+    position: sticky;
+    z-index: 3;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgb(21, 21, 21);
+  }
+  
+    .dining,.facilities,.events,.gallery,.rooms,.contact{
+    float: right;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding-top: 30px;
+    padding-left: 20px; 
+    }
+  
+    div.contact{
+      padding-left: 25px;
+    }
+  
+    li a {
+      color: white;
+      text-align: center;
+      padding: 18px;
+      text-decoration: none;
+    }
+  
+  
+  
+  li .home {
+      float: left;
+      font-size: 30px;
+      font-family: 'Playfair Display SC', serif;
+      font-weight: bolder;
+  }
+  
+  .underline-hover-effect {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0.25rem;
+  }
+  
+  .underline-hover-effect::before {
+    content: "";
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFE600;
+    transition: width 0.37s ease-out;
+    background-image: linear-gradient(to right, #c18c00, #ffcb00, #fdea1d, #f0ffae, #fdea1d, #ffcb00, #c18c00);
+  }
+  
+  .underline-hover-effect:hover::before {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .gradient-text {
+    background-image: linear-gradient(to left, #c18c00, #ffcb00, #fdea1d, #fdea1d, #ffcb00, #c18c00);
+    background-clip: text;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+  }
+  
+  
+  /*removing the scroll bar*/
+  ::-webkit-scrollbar{
+    display:none;
+  }
+
+/* starting part of the webpage featuring the signature dishes and a little introduction to the restuarant */
+.parallax {
+    background-image: url("https://source.unsplash.com/in24HLtOqyI");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0.56;
+    z-index: -1;
+  }
+
+.content{
+    height: 1000px;
+    z-index: 1;
+    display: grid;
+    grid-template-rows: 350px 40px 30px;
+    gap: 15%;
+    justify-items: center;
+    justify-content: center;
+    
+}
+
+.content img{
+    height: 350px;
+    width: 350px;
+    margin: 30px;
+}
+
+.content h1{
+    width: 790px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+.down-arrow {
+    position: absolute;
+    top: calc(100vh - 60px);
+    left: calc(50% - 14px);
+    width: 0;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 2px;
+    color: white;
+    z-index: 2;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+
+  .signature-dish {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: center;
+      justify-items: center;
+      margin-bottom: 10%;
+      gap: 3%;
+      overflow: hidden;
+  }
+
+.dish1 {
+  width: 300px;
+  height: 300px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+  border: 1px solid black;  
+}
+  .dish1 img {
+      width: 300px;
+      height: 190px;
+      border-radius: 5px 5px 0px 0px;
+      transition: 200ms transform ease-in-out;
+  }
+
+
+  .dish1 h1 {
+      text-align: center;
+      padding-top: 7px;
+  }
+
+  .dish1 p{
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+.dish2 {
+  width: 300px;
+  height: 300px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+  border: 1px solid black;  
+}
+
+  .dish2 img {
+      width: 300px;
+      height: 190px;
+      border-radius: 5px 5px 0px 0px;
+      transition: 200ms transform ease-in-out;
+  }
+  .dish2 h1 {
+      text-align: center;
+      padding: 7px;
+  }
+
+  .dish2 p {
+    text-align: center;
+    font-size: 14px;
+    width: 300px;
+    height: 58px;
+  }
+
+
+.dish3 {
+  width: 300px;
+  height: 300px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+  border: 1px solid black;  
+}
+
+    .dish3 img {
+        width: 300px;
+        height: 190px;
+        border-radius: 5px 5px 0px 0px;
+
+    }
+
+    .dish3 h1 {
+      text-align: center;
+      padding: 7px;
+    }
+
+    .dish3 p{
+      text-align: center;
+      font-size: 14px;
+      width: 300px;
+      height: 58px;
+    }
+
+    table,td{
+      width:60%;
+      font-family: "Inter", sans-serif;
+      text-align: center; 
+      border: 0.05px solid black;
+    }
+    table {
+      margin:0 auto;
+      margin-bottom: 5%;
+    }
+    td{
+      padding: 10px;
+    }
+
+    th{
+      font-size: 30px;
+      border: 0.05px solid black;
+    }
+
+
+/* footer of the website */
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #2f2f2f;
+    background-color: #000000;
+    border-top: 1px solid #ffe600;
+  }
+
+
+  
+  /*selects all the child elements inside the footer*/
+  .footer > * {
+    flex:  1 100%;
+    margin: 20px;
+  }
+  
+  .footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+    width: 50%;
+    color:rgb(255, 255, 255)
+  }
+  
+  .footer__logo {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 40px;
+  }
+  
+  .footer__logo a {
+    background-image: linear-gradient(to left, #c18c00, #ffcb00, #fdea1d, #fdea1d, #ffcb00, #c18c00);
+    background-clip: text;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+  }
+  
+   .footer_logo a:link, a:hover, a:active, a:visited{
+    text-decoration: none;
+    color:#ffffff;
+  }
+  .footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .nav__title {
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    font-family: "Inter";
+  }
+  
+  .footer address {
+    font-style: normal;
+    color: #999;
+  }
+  /*FOOTER BUTTON */
+  .footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: #ffff00;
+    border-radius: 100px;
+    color: rgb(0, 0, 0);
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+    cursor: pointer;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+  }
+  
+  .footer__btn:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: #e5ce00;
+    border-radius: 100px;
+    color:rgb(0, 0, 0);
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+    font-family:  "Inter", Arial, Helvetica, sans-serif;
+  }
+  
+  .footer__btn:active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: #E0CA00;
+    border-radius: 100px;
+    color:rgb(0, 0, 0);
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+    box-shadow: inset 0px 2px 2px 3px rgba(0, 0, 0, 0.25);
+    font-family:  "Inter", Arial, Helvetica, sans-serif;
+  }
+  
+  /*other footer components*/
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer li {
+    line-height: 2em;
+    justify-content: center;
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
+  
+  .footer__nav {
+    display: flex;
+      flex-flow: row wrap;
+  }
+  
+  
+  .footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+  
+  .nav__ul a {
+    color: #999;
+  }
+  
+  .nav__ul--extra {
+    column-count: 3;
+    column-gap: 1.25em;
+  }
+  
+  .legal{
+    display: flex;
+    flex-wrap: wrap;
+    color:#999;
+  }
+  
+  .legal a {
+    display: flex;
+    align-items: center;
+    color: #999;
+  }
+  
+  .heart {
+    color: #999;
+  }
+  
+  
+  /*media queries*/
+  @media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
+  
+    .nav__item--extra {
+      flex-grow: 2;
+    }
+  
+    .footer__addr {
+      flex: 1 0px;
+    }
+  
+    .footer__nav {
+      flex: 2 0px;
+    }
+  }
