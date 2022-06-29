@@ -363,7 +363,8 @@ body {
 .contentall h1 p {
   float: left;
   width: 40%;
-  font-size: 30ox;
+  font-size: 30px;
+
 }
 
 .contentall  p{
@@ -376,20 +377,21 @@ body {
 .contentall h1{
   font-size: 30px;
   font-family: "Georgia", serif;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 .content1 {
   border: 1px solid black;
-  margin: 20px 0px;
+  margin-top: 80px;
   background-color: lightgrey;
   width: 100%;
   display: inline-block;
-  position: absolute;
 }
 
 .content2 {
   border: 1px solid black;
-  margin: 20px 0px;
+  margin-top: 80px;
   background-color: lightgrey;
   width: 100%;
   display: inline-block;
@@ -397,7 +399,7 @@ body {
 
 .content3 {
   border: 1px solid black;
-  margin: 20px 0px;
+  margin-top: 80px;
   background-color: lightgrey;
   width: 100%;
   display: inline-block;
@@ -405,7 +407,8 @@ body {
 
 .content4 {
   border: 1px solid black;
-  margin: 20px 0px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   background-color: lightgrey;
   width: 100%;
   display: inline-block;
@@ -429,4 +432,16 @@ body {
   padding-top: 20%;
   padding-right: 580px;
   float: left;
+}
+
+a.booklink:link, a.booklink:visited{
+  background-color: yellow;
+  color: black;
+  text-decoration: none;
+}
+
+a.booklink:hover, a.booklink:active {
+  background-color: yellow;
+  text-decoration: underline;
+  color: red;
 }
