@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+
+nav{
+  width: 100%;
+  top: 0;
+  position: sticky;
+  z-index: 3;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color:rgb(21, 21, 21);
+}
+
+  .dining,.facilities,.events,.gallery,.rooms,.contact{
+  float: right;
+  font-family: "Poppins";
+  font-size: 14px;
+  padding-top: 25px;
+  padding-left: 20px;
+  }
+
+  li a {
+    color: white;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+  }
+
+
+
+li .home {
+    float: left;
+    font-size: 30px;
+
+    font-family: 'Lobster', cursive;
+}
+
+.underline-hover-effect {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+
+.underline-hover-effect::before {
+  content: "";
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #FFE600;
+  transition: width 0.37s ease-out;
+  background-image: linear-gradient(to right, #c18c00, #ffcb00, #fdea1d, #f0ffae, #fdea1d, #ffcb00, #c18c00);
+}
+
+.underline-hover-effect:hover::before {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.gradient-text {
+  background-image: linear-gradient(to left, #c18c00, #ffcb00, #fdea1d, #fdea1d, #ffcb00, #c18c00);
+  background-clip: text;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+
+/*removing the scroll bar*/
+::-webkit-scrollbar{
+  display:none;
+}
+
+video {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text h1{
+  font-family: "Poppins", sans-serif;
+  font-size: 6em;
+  text-align: center;
+  color: #ffff;
+  z-index: 2;
+  padding-top: 50px;
+}
+
+.text2{
+  font-family:'Poppins', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
+  color: #ffff;
+  z-index: 2;
+}
+
+.header-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.56;
+  z-index: 1;
+}
+
+
+
+
+.page {
+  height: 100vh;
+  background-color: #ffffff;
+  background-size: cover;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="facilitiesform.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Facilities booking</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="gradient-text home" href="#home">OXFORD SUITES</a></li>
+            <li><a class="underline-hover-effect contact" href="#contact">Contact Us</a></li>
+            <li><a class="underline-hover-effect events" href="#events">Events</a></li>
+            <li><a class="underline-hover-effect facilities" href="#facilities">Facilities</a></li>
+            <li><a class="underline-hover-effect dining" href="#dining">Dining</a></li>
+            <li><a class="underline-hover-effect rooms" href="#rooms">Rooms</a></li>
+            <li><a class="underline-hover-effect gallery" href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+    <section class="form_page">
+    <h1>Facilities booking</h1>
+    <form>
+        <fieldset>
+            <table>
+                <tr>
+                    <td><label>First Name </label></td>
+                    <td><input placeholder="First name" type="text" title="Your given name"required></td>
+                </tr>
+                <tr>
+                    <td><label>Last Name </label></td>
+                    <td><input placeholder="Surname" type="text" title="Your surname"required></td>
+                </tr>
+                <tr>
+                    <td><label>Email </label></td>
+                    <td><input placeholder="Email" type="email" title="Your email"required></td>
+                </tr>
+                <tr>
+                    <td><label>Phone number </label></td>
+                    <td><select>
+                        <option>SG +65</option>
+                        <option>US +1</option>
+                        <option>AE +971</option>
+                        <option>GB +44</option>
+                        <option>JP +81</option>
+                        <option>CN +86</option>
+                        <option>AU +66</option>
+                        <option>MY +60</option>
+                        <option>MF +33</option>
+                        <option>PH +63</option>
+                        <option>VN +84</option>
+                        <option>AF +004</option>
+                        <option>FI +246</option>
+                        <option>FR +250</option>
+                        <option>HK +344</option>
+                        <option>IS +352</option>
+                        <option>IN +356</option>
+                        <option>ID +360</option>
+                    </select><input placeholder="Phone number" type="tel" minlength="9" maxlength="19" required></td>
+                </tr>
+                <tr>
+                    <td><label>Facilities</label></td>
+                    <td><select required>
+                        <option value="" disabled selected hidden>Choose a facility</option>
+                        <option>KTV</option>
+                        <option>Fitness gym for men </option>
+                        <option> Fitness gym for woman</option>
+                        <option>SPA for men</option>
+                        <option>SPA for woman</option>
+                        <option>SAUNA for man</option>
+                        <option> SAUNA for woman</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label>Number of people</label></td>
+                    <td><select required>
+                        <option disabled hidden selected>PAX</option>
+                        <option>1-2</option>
+                        <option>3-4</option>
+                        <option>5-6</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label>Date</label></td>
+                    <td><input placeholder="Date" type="date" required></td>
+                </tr>
+                <tr>
+                    <td><label>Time</label></td>
+                    <td><input placeholder="Time" type="time" required></td>
+                </tr>
+            </table>
+            <div style="padding-bottom:20px;"></div>
+          <button class="submitbutton" type="submit" >Submit</button>
+        </fieldset>
+    </form>
+    </section>
+</body>
+</html>
