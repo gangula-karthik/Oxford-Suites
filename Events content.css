@@ -88,6 +88,10 @@
   width: 1280px;
 }
 
+main {
+   margin-bottom: 30px; 
+}
+
 section {
   border-style: solid;
   border-radius: 0.5px;
@@ -473,4 +477,16 @@ video {
   z-index: 2;
   display: flex;
   justify-content: center;
+}
+
+a.booklink:link, a.booklink:visited{
+  background-color: yellow;
+  color: black;
+  text-decoration: none;
+}
+
+a.booklink:hover, a.booklink:active {
+  background-color: yellow;
+  text-decoration: underline;
+  color: red;
 }
