@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="events form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway&display=swap" rel="stylesheet">
+    <title>Forms</title>
+</head>
+<body>
+  <body>
+    <nav>
+        <ul>
+            <li><a class="gradient-text home" href="#home">Oxford Suites</a></li>
+            <li><a class="underline-hover-effect contact" href="#contact">Contact Us</a></li>
+            <li><a class="underline-hover-effect events" href="#events">Events</a></li>
+            <li><a class="underline-hover-effect facilities" href="#facilities">Facilities</a></li>
+            <li><a class="underline-hover-effect dining" href="#dining">Dining</a></li>
+            <li><a class="underline-hover-effect rooms" href="#rooms">Rooms</a></li>
+            <li><a class="underline-hover-effect gallery" href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+ <section>
+   <h1>Events Reservation</h1>
+
+  <form>
+
+   <div class="settings">
+    <label for="fname">Enter Full Name</label>
+    <input type="text" id="fname" name="fname" class="forminput" placeholder="Full Name" required>
+    <label for="contact">Enter  Phone Number</label>
+    <input type="contact" id="contact" class="forminput" title="8 digit" placeholder="Phone number" pattern=\d{8} required>
+    <label for="email">Enter email</label>
+    <input type="email" id="email" name="email" class="forminput" placeholder="Email" required>
+    <label for="typeofe">Event type</label>
+    <select id="typeofe" name="typeofe" class="forminput">
+      <option value="charityform">Charity</option>
+      <option value="seminarform">Seminars</option>
+      <option value="weddingform">Wedding</option>
+      <option value="hackathonform">Hackathon</option>
+    </select>
+    <label for="quantity">Enter number of people</label>
+    <input type="number" id="quantity" name="quantity" class="forminput" min="0" max="100" step="1" placeholder="Number ">
+    <label for="date">Choose a date</label>
+    <input type="date" id="date" name="dates" class="forminput">
+    <label for="appt">Select a time </label>
+    <p><input type="time" id="appt" name="appt" class="forminput"><p>
+
+    <input type="submit" value="Submit" class="submit">
+
+   </div>
+  </form>
+ </section>
+
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo"><a href="#home">Oxford Suites</a></h1>
+
+        <h2>Location</h2>
+
+        <address>
+          One Raffles Place, Singapore 048616<br><br>
+
+          <a class="footer__btn" href="mailto:224627G@mymail.nyp.edu.sg">Email Us</a>
+        </address>
+      </div>
+
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Rooms & Suites</h2>
+    <!-- Optional content -->
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Room Bookings</a>
+            </li>
+
+            <li>
+              <a href="#">Suite Gallery</a>
+            </li>
+
+            <li>
+              <a href="#">Meeting & Events</a>
+            </li>
+          </ul>
+        </li>
+    <!-- Optional content -->
+        <li class="nav__item">
+          <h2 class="nav__title">Others</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Gallery</a>
+            </li>
+
+            <li>
+              <a href="#">Dining</a>
+            </li>
+
+            <li>
+              <a href="#">Offers</a>
+            </li>
+          </ul>
+          </li>
+
+        <li class="nav__item">
+          <h3 class="nav__title">Legal</h3>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+          </ul>
+        </li>
+
+    <div class="legal">
+        <p>&copy; 2022 Nanyang Polytechnic. All rights reserved.</p>
+
+        <div class="legal__links">
+          Press <span> here<span class="heart">to contact lawyer</span></span>
+        </div>
+      </div>
+    </footer>
+</body>
