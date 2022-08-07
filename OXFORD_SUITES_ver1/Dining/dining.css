@@ -424,7 +424,7 @@ video {
   align-items: center;
   justify-content: center;
   height: 36px;
-  max-width: max-content;
+  width: 100px;
   background-color: #ffff00;
   border-radius: 100px;
   color: rgb(0, 0, 0);
@@ -441,7 +441,7 @@ video {
   align-items: center;
   justify-content: center;
   height: 36px;
-  max-width: max-content;
+  width: 100px;
   background-color: #e5ce00;
   border-radius: 100px;
   color:rgb(0, 0, 0);
