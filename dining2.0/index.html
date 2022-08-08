@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OXFORD SUITES</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,1,200" />
+	<script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<script src="https://kit.fontawesome.com/0cdc6dc863.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+	<nav class="navbar fixed-top">
+		<div class="logo">
+			<img src="oxfordsuites.png" class="d-inline-block align-top" alt="logo">
+			<h1>OXFORD SUITES</h1>
+		</div>
+		<ul class="nav-links">
+			<li><a class="underline-hover-effect rooms" href="#rooms">Rooms</a></li>
+			<li><a class="underline-hover-effect dining" href="index.html">Dining</a></li>
+			<li><a class="underline-hover-effect facilities" href="#facilities">Facilities</a></li>
+			<li><a class="underline-hover-effect events" href="#events">Events</a></li>
+			<li><a class="underline-hover-effect contact" href="#contact">Contact Us</a></li>
+			<li><a class="gallery" href="#gallery"><span style="color: white; font-size: 30px;"class="material-symbols-outlined">
+				account_circle
+				</span></a></li>
+		</ul>
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
+	<section class="reviews-and-book-now">
+		<ul>
+			<li style="float:left;text-align:left;"><h1>The Oxford Suites Singapore</h1></li>
+			<li style="float:left;text-align:left;margin-top: 1.76%;">4.3 stars</li>
+			<li style="float:left;text-align:left;margin-top: 1.76%; text-decoration: none;"><a style="color: white;" href="#open">Leave a review</a></li>
+			<li><button onclick="button_pop_out()">RESERVE <i class="fa-solid fa-angle-down"></i></button></li>
+			<li>
+				<lord-icon
+					src="https://cdn.lordicon.com/hcndxtmn.json"
+					trigger="hover"
+					colors="primary:#ffffff"
+					style="width:20px;height:20px">
+				</lord-icon><span style="color: white; font-weight:300;font-size: 14px;"> +65 9880-8144</span></li>
+			<li><span style="color: white;"class="material-symbols-outlined">location_on</span><a style="color:white;"href="https://www.google.com/maps/place/Oxford+Suites/@1.3156842,103.8503361,17z/data=!3m1!4b1!4m5!3m4!1s0x31da191c4d132049:0xf7a575083db5f2a!8m2!3d1.3156756!4d103.8525277" target="_blank">VIEW MAP</a></li>
+		</ul>
+	</section>
+
+   
+
+	<section class="book">
+		<div class="container flex">
+		  <div class="input grid">
+			<div class="box">
+			  <label>Check-in:</label>
+			  <input type="date" id="booking_date">
+			</div>
+			<div class="box">
+			  <label>Check-out:</label>
+			  <input type="date" id="booking_date">
+			</div>
+			<div class="box">
+			  <label>Adults:</label> <br>
+			  <input type="number" placeholder="0" max="9" min="0">
+			</div>
+			<div class="box">
+			  <label>Children:</label> <br>
+			  <input type="number" placeholder="0" max="9" min="0">
+			</div>
+		  </div>
+		  <div class="search">
+			<input type="submit" value="VIEW RATES">
+		  </div>
+		</div>
+	  </section>
+
+
+	<div class="row video-background">
+		<div class="video-wrap">
+			<div id="video">
+				<video id="bgvideo" autoplay loop muted playsinline>
+					<source src="images/oxford_suites_new.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+	</div>
+	
+	<div class="caption text-center">
+		<h1>DINING</h1>
+		<span class="material-symbols-outlined" id="down-arrow">expand_more</span>
+	</div>
+
+	
+	<div id="course" class="row justify-content-center">
+		<div class="col-md-8 text-center">
+			<h1 style="font-family: 'Bodoni Moda', serif; font-size: 3em; position: relative; padding-top: 15%;margin-bottom: 5%;text-align: center;">
+				Our Restaurants</h1>
+
+			<section class="restaurant_cards">
+				<div class="dining_card card_shadow">
+					<div class="card_header card_image">
+						<img loading="lazy" src="images/r1.png" alt="La Maison" />
+					</div>
+					<div class="card_body">
+						<h1>La Maison 1888</h1>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur reiciendis accusantium
+							eius dignissimos facilis optio odit a praesentium voluptas fugit. Voluptatibus debitis
+							accusamus laborum iste aspernatur?</p>
+						<br>
+						<span class="material-symbols-outlined">schedule </span>
+						<span class="times">Open everyday</span>
+						<p class="times_list">Mon-Fri: 12:30 PM - 10:30PM</p>
+						<p class="times_list">Sat-Sun: 6:30 PM - 10:30PM</p>
+					</div>
+					<div class="card_footer">
+						<a href="menu_page1.html" target="_blank"><button class="reservation_button" style="margin-right: 25px;">View
+								Menu</button></a>
+						<a href="dining_reservation.html" target="_blank"><button class="reservation_button"
+								style="margin-right: 25px;text-align: center;align-items: center;">RESERVE</button></a>
+					</div>
+				</div>
+
+
+				<div class="dining_card card_shadow">
+					<div class="card_header card_image">
+						<img src="https://source.unsplash.com/SiwrpBnxDww" alt="Golden Corral Buffet" />
+					</div>
+					<div class="card_body">
+						<h1>Golden Corral Buffet</h1>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam nisi autem rem cum nostrum
+							veniam, voluptas ex aliquam vero provident in illum culpa quos consectetur voluptates.</p>
+						<br>
+						<span class="times"></span><script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+						<lord-icon src="https://cdn.lordicon.com/abgtphux.json" trigger="hover" colors="primary:#e83a30"
+							style="width:20px;height:20px">
+						</lord-icon> Open everyday</span>
+						<p class="times_list">6:30 AM - 10:30PM</p>
+					</div>
+					<div class="card_footer">
+						<a href="menu_page3.html" target="_blank"><button class="reservation_button" style="margin-right: 25px;">View
+								Menu</button></a>
+						<a href="dining_reservation.html" target="_blank"><button class="reservation_button"
+								style="margin-right: 25px; line-height: 0px;">RESERVE</button></a>
+					</div>
+				</div>
+				<div class="dining_card card_shadow">
+					<div class="card_header card_image">
+						<img src="images/r2.png" alt="The Altitude Restaurant" />
+					</div>
+					<div class="card_body">
+						<h1>The Altitude Restaurant</h1>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus eum perspiciatis
+							esse hic fugiat repellendus illum, deleniti iste dolores ad minus suscipit quisquam rem
+							magnam quis.</p>
+						<br>
+						<span class="times"><script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+							<lord-icon src="https://cdn.lordicon.com/abgtphux.json" trigger="hover" colors="primary:#e83a30"
+								style="width:20px;height:20px">
+							</lord-icon>  Open everyday</span>
+						<p class="times_list">12:30 PM - 2:30PM</p>
+						<p class="times_list">6:30 PM - 10:30PM</p>
+					</div>
+					<div class="card_footer">
+						<a href="menu_page2.html" target="_blank"><button class="reservation_button" style="margin-right: 25px;">View
+								Menu</button></a>
+						<a href="dining_reservation.html" target="_blank"><button class="reservation_button"
+								style="margin-right: 25px;">RESERVE</button></a>
+					</div>
+				</div>
+
+				<div class="dining_card card_shadow">
+					<div class="card_header card_image">
+						<img src="images/r3.png" alt="The Royal Brew" />
+					</div>
+					<div class="card_body">
+						<h1>The Gold Room</h1>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellat voluptatibus,
+							assumenda sequi voluptatem voluptate deserunt, aliquam laudantium labore aut maxime expedita
+							ad ut, architecto accusamus.</p>
+						<br>
+						<span class="material-symbols-outlined">schedule </span>
+						<span class="times">Open everyday</span>
+						<p class="times_list">Mon-Tue: 7:00PM - 1:00AM</p>
+						<p class="times_list">Wed-Sun: 3:00PM-12:00AM</p>
+
+					</div>
+					<div class="card_footer">
+						<a href="menu_page4.html" target="_blank"><button class="reservation_button" style="margin-right: 25px;">View
+								Menu</button></a>
+					</div>
+				</div>
+			</section>
+
+
+		</div>
+	</div>
+	<!--- End Course Section -->
+	<h1
+		style="font-family: 'Bodoni moda', serif; font-size: 3em; position: relative; padding-bottom: 5%;text-align: center;">
+		Check out some of our reviews</h1>
+
+	<section class="reviews_cards">
+		<!-- <h1 style="text-align: center;margin:30px;font-size: 30px;">Check out some of our reviews</h1> -->
+		<div class="review_card_1 card_shadow">
+			<h1>Dan Smith</h1>
+			<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span
+				class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span
+				class="material-symbols-outlined">star</span>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellat voluptatibus, assumenda sequi
+				voluptatem voluptate deserunt, aliquam laudantium labore aut maxime expedita ad ut, architecto
+				accusamus.</p>
+		</div>
+
+		<div class="review_card_1 card_shadow">
+			<h1>Elon Musk</h1>
+			<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span
+				class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span style="color: grey"
+				class="material-symbols-outlined">star</span>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellat voluptatibus, assumenda sequi
+				voluptatem voluptate deserunt, aliquam laudantium labore aut maxime expedita ad ut, architecto
+				accusamus.</p>
+		</div>
+
+		<div class="review_card_1 card_shadow">
+			<h1>Peter Parker</h1>
+			<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span
+				class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span
+				class="material-symbols-outlined">star</span>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellat voluptatibus, assumenda sequi
+				voluptatem voluptate deserunt, aliquam laudantium labore aut maxime expedita ad ut, architecto
+				accusamus.</p>
+		</div>
+
+		<div class="review_card_1 card_shadow">
+			<h1>John Adams</h1>
+			<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span
+				class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellat voluptatibus, assumenda sequi
+				voluptatem voluptate deserunt, aliquam laudantium labore aut maxime expedita ad ut, architecto
+				accusamus.</p>
+		</div>
+		</div>
+	</section>
+
+	<h1 style="font-family: 'Bodoni Moda', serif; font-size: 3em; position: relative; padding-top: 3%;margin-bottom: 2%;text-align: center;">
+		Nearby Options</h1>
+
+
+
+	<section class="nearby_options">
+		<div class="nearby_restaurant card_shadow">
+			<!-- <img src="https://source.unsplash.com/poI7DelFiVA" alt="Ginett Restaurant & Wine Bar"> -->
+			<h1>Ginett Restaurant & Wine Bar</h1>
+			<br>
+			<h4>7 Km / 4.34 Miles</h4>
+			<br>
+			<p>Phone number: +65 42238374</p>
+			<br>
+			<p>Located on the ground floor, Ginett is a bistro-style French restaurant and wine bar in the heart of Singapore’s arts district.Ginett offers charcoal-grilled meats, premium cold cuts and cheese, and an extensive French wine list starting at $6 per glass.</p>
+			<footer>
+				<a href="https://g.page/ginettsingapore?share" target="_blank"><button class="reservation_button">Get
+						Directions</button></a>
+			</footer>
+		</div>
+
+		<div class="nearby_restaurant card_shadow">
+			<h1>Cali Ascott Raffles Place</h1>
+			<br>
+			<h4>4 Km / 4.48 Miles</h4>
+			<br>
+			<p>Phone number: +65 23238376</p>
+			<br>
+			<p>Cali Restaurant at Ascott Raffles Place brings the distinctively vibrant culinary tradition of the Southwest Mexican. Our menu features our signature fajitas with a generous selection of Southwestern Mexican favourites and exquisite creations by our talented chefs.</p>
+			<footer>
+				<a href="https://g.page/Caliraffles?share" target="_blank"><button class="reservation_button">Get
+						Directions</button></a>
+			</footer>
+		</div>
+
+		<div class="nearby_restaurant card_shadow">
+			<h1>Riverside Grilled Fish 江边城外</h1>
+			<br>
+			<h4>5 Km / 3.10 Miles</h4>
+			<br>
+			<p>Phone number: +65 49038375</p>
+			<br>
+			<p>Popular Chinese restaurant Riverside Grilled Fish 江边城外 with 54 outlets in China, has set up its first overseas outpost in Singapore at Raffles City basement (taking over Watami).The Singapore branch has a pseudo traditional inn meets oriental restaurant design. </p>
+			<footer>
+				<a href="https://www.google.com/maps/place/Riverside+Grilled+Fish+%E6%B1%9F%E8%BE%B9%E5%9F%8E%E5%A4%96+@+Raffles+City/@1.2939321,103.8526983,17z/data=!3m2!4b1!5s0x31da19a5d565eaa3:0xb22ccd0f7a55b22b!4m5!3m4!1s0x31da19a68129f8cd:0xf266b18e3275077a!8m2!3d1.2939288!4d103.8540458" target="_blank"><button
+						styles="margin-right: none !important" class="reservation_button">Get Directions</button></a>
+			</footer>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__addr">
+			<h1 class="footer__logo"><a href="#home">OXFORD SUITES</a></h1>
+		
+			<h2>Location</h2>
+		
+			<address>
+			  One Raffles Place, Singapore 048616<br><br>
+		
+			  <a class="footer__btn" href="mailto:224627G@mymail.nyp.edu.sg" style>Contact <i style="padding-left: 4px;" class="fa-solid fa-envelope"></i></a>
+			</address>
+		  </div>
+		
+		  <ul class="footer__nav">
+			<li class="nav__item">
+			  <h2 class="nav__title">Rooms & Suites</h2>
+		<!-- Optional content -->
+			  <ul class="nav__ul">
+				<li>
+				  <a href="#">Room Bookings</a>
+				</li>
+		
+				<li>
+				  <a href="#">Suite Gallery</a>
+				</li>
+		
+				<li>
+				  <a href="#">Meeting & Events</a>
+				</li>
+			  </ul>
+			</li>
+		<!-- Optional content -->
+			<li class="nav__item">
+			  <h2 class="nav__title">Others</h2>
+		
+			  <ul class="nav__ul">
+				<li>
+				  <a href="#">Gallery</a>
+				</li>
+		
+				<li>
+				  <a href="#">Dining</a>
+				</li>
+		
+				<li>
+				  <a href="#">Offers</a>
+				</li>
+			  </ul>
+			  </li>
+		
+			<li class="nav__item">
+			  <h3 class="nav__title">Legal</h3>
+		
+			  <ul class="nav__ul">
+				<li>
+				  <a href="#">Privacy Policy</a>
+				</li>
+				<li>
+				  <a href="#">Terms of Use</a>
+				</li>
+				<li>
+				  <a href="#">Careers</a>
+				</li>
+			  </ul>
+			</li>
+		
+		<div class="legal">
+			<p>&copy; 2022 Nanyang Polytechnic. All rights reserved.</p>
+			<a href="#legal">Click here to contact lawyer</a>
+		  </div>
+	</footer>
+
+
+
+	<!--- Script Source Files -->
+	<script src="app.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+	<!--- End of Script Source Files -->
+
+</body>
+
+</html>

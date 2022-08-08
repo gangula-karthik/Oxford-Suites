@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reviews.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <a id="open">Click here</a>
+    <div class="modal-container">
+        <div class="modal">
+            <div> 
+                <h1>REVIEWS AND RATINGS <span id="close" style="float:right;" class="material-symbols-outlined">cancel</span></h1>
+            </div>
+            <hr>
+
+            <h2>How was your experience ?</h2>
+
+            <form method="get" action="reviews_form_processor.html">
+                <table style="margin-left:auto;margin-right:auto;">
+                    <tr>
+                        <td><label for="reviews">Rating: </label></td>
+                        <td><div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Name: </label></td>
+                        <td><input type="text" name="name" placeholder="Enter your name"  value="" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Email: </label></td>
+                        <td><input type="email" name="email" placeholder="Enter your email"  value="" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Review: </label></td>
+                        <td><textarea name="review" style="width: 400px; height: 70px;" value="" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="POST" rowspan="2"></td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+
+    <script defer>
+        const open = document.getElementById('open');
+        const modal_container = document.querySelector('.modal-container');
+        const close = document.getElementById('close');
+
+        open.addEventListener('click', () => {
+            modal_container.classList.add('show');
+        } );
+
+
+        close.addEventListener('click', () => {
+            modal_container.classList.remove('show');
+        } );
+    </script>
+</body>
+</html>
