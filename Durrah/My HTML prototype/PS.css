@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.header2{
+  padding-top: 2.5%;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Playfair display";
+  background-image: url("Hotel Room Pictures/grey3BG.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.details1{
+  float: center;
+  position: relative;
+  padding: 80px;
+}
+img{
+  height: 85%;
+  width: 85%;
+}
+.icons{
+  margin-left: 7%;
+}
+.footer{
+  position: relative;
+  clear: both;
+}
+.button {
+   background-color: black;
+   border: none;
+   color: gold;
+   padding: 13px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 18px;
+  border-radius:4px;
+  margin-left: 10%;
+  float: left;
+}
+.button1 {
+   background-color: black;
+   border: none;
+   color: gold;
+   padding: 13px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 18px;
+  border-radius:4px;
+  margin-right: 15%;
+  float: right;
+}
+.button:hover {
+  background-color: gold;
+  color: black;
+}
+.button1:hover {
+  background-color: gold;
+  color: black;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  display: flex;
+  float: left;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.icons::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.sidetitle{
+  padding-top: 2%;
+  padding-left: 5%;
+  text-align: left;
+  float: left;
+  font-family: 'Playfair display';
+  font-style: italic;
+  font-weight: bold;
+  font-size: 25px;
+
+}
+.title{
+   font-family: "Playfair display";
+   font-size: 35px;
+}
+table.a {
+float: center;
+border-collaspe: separate;
+border-spacing: 50px;
+margin-bottom: 3%;
+margin-left: 10%;
+table-layout: auto;
+text-align: left;
+font-family: Arial;
+font-size: 17px;
+}

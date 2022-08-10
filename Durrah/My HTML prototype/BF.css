@@ -1,0 +1,195 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.Form{
+  text-align: Left;
+}
+.Title{
+  margin-left: 3%;
+}
+.button{
+border-radius: 100px;
+background-color: #B7A46A;
+border: none;
+height: 40px;
+width: 200px;
+padding: 8px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 18px;
+font-family: "playfair display";
+margin: auto;
+border-radius:10px;
+float: left;
+}
+.button:hover {
+  background: #e2ca81;
+  height: 40px;
+  width: 200px;
+  border-radius: 100px;
+}
+
+.footer{
+  clear: both;
+}
+
+main{
+  background-image: url("Hotel Room Pictures/grey3BG.jpg");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input[type="text"] {
+  color: gray;
+  font-style:Arial;
+  font-size:0.8em;
+  border: 2px solid;
+  height: 39px;
+  width: 256px;
+  color: black;
+  margin: auto;
+  text-align: center;
+  padding: 5px;
+  solid #000;
+}
+label {
+  margin: 0 80px 0 0;
+}
+
+#country{
+  color: gray;
+  font-style:Arial;
+  border: 2px solid;
+  padding-left: 45;
+  height: 39px;
+  width: 256px;
+  color: black;
+  margin: auto;
+  text-align: center;
+  font-size:15px;
+}
+input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+  font-size: 25px;
+}
+input::placeholder{
+  font-size: 15px;
+}
+input[type="radio"] {
+  margin-right: 0px;
+
+}
+#addtionaldetails{
+  width: 450px;
+  height: 100px;
+  font-size: 15px;
+  text-align: left;
+  padding-bottom: 6%;
+}
+ .details{
+   text-align: left;
+   margin-top: 5px;
+   margin-left: 5%;
+   margin-right: 5%;
+ }
+ .address{
+   text-align: left;
+   margin-top: 5px;
+   padding-top: 0px;
+ }
+.hotelrewards{
+  text-align: left;
+  margin-top: 5px;
+  padding-top: 0px;
+}
+.payment{
+  border-style: solid;
+  border: 1px solid;
+}
+.gender{
+  font-size: 17px;
+}
+.gender1{
+  margin-right: 1%;
+}
+h4{
+  font-family: 'Joan', cursive;
+  font-size: 20px;
+  text-align: left;
+}
+h5 {
+  font-family: 'Playfair display';
+  font-size: 35px;
+}
+.left{
+float: left;
+margin-left: 5px;
+margin-right: 3%;
+font-size: 17px;
+}
+.right2{
+ padding-left: 5px;
+ font-size: 17px;
+}
+.right{
+  margin-left: 10px;
+  margin-right: 3%;
+   font-size: 17px;
+}
+.cards{
+  width: 200px;
+  height: 50px;
+}
+.rewards{
+  font-size: 17px;
+}
+.policies, .Acknowledge{
+  font-size: 16px;
+}
+
+.submit{
+  border-radius: 100px;
+  background-color: #B7A46A;
+  border: none;
+  height: 40px;
+  width: 200px;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "playfair display";
+  margin-bottom: 10%;
+  margin-left: 80%;
+  border-radius:10px;
+  float: left;
+}
+.submit:hover {
+  background: #e2ca81;
+  height: 40px;
+  width: 200px;
+  border-radius: 100px;
+}
+
+.Staysummary{
+  font-size: 15px;
+  font-family: "Joan", cursive;
+  border-style: groove;
+  border: 5px groove;
+  float: right;
+  margin-top: 5px;
+  margin-right: 50px;
+  padding-right: 200px;
+  padding-left: 90px;
+  padding-bottom: 90px;
+  text-align: left;
+}

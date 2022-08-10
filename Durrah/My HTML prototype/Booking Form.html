@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav&footer.css">
+    <link rel="stylesheet" href="R&S.css">
+    <Link rel="stylesheet" href="BF.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Mulish:wght@300&family=PT+Sans&family=Source+Serif+Pro:wght@300&family=Space+Mono&family=Tiro+Kannada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Joan&family=Libre+Baskerville&family=Mulish:wght@300&family=PT+Sans&family=Source+Serif+Pro:wght@300&family=Space+Mono&family=Tiro+Kannada&display=swap" rel="stylesheet">
+</head>
+<main>
+  <body>
+    <nav>
+        <ul>
+            <li><a class="gradient-text home" href="#home">OXFORD SUITES</a></li>
+            <li><a class="underline-hover-effect contact" href="#contact">Contact Us</a></li>
+            <li><a class="underline-hover-effect events" href="#events">Events</a></li>
+            <li><a class="underline-hover-effect facilities" href="#facilities">Facilities</a></li>
+            <li><a class="underline-hover-effect dining" href="dining.html">Dining</a></li>
+            <li><a class="underline-hover-effect rooms" href="#rooms">Rooms</a></li>
+            <li><a class="underline-hover-effect gallery" href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+<div class="Form">
+<head>
+  <div class="Title">
+  <h5>Reservation Of Rooms Form - Guest Details</h5>
+  <button class="button" type="membership"><b>I prefer member sign in</b></button>
+  </div>
+</head>
+<br><br><br><br>
+<body>
+<form class="details" name="input" method="post" action="mailto:224627G@mymail.nyp.edu.sg">
+  <h4><u>Contact Information</u></h4><br><br>
+  <div class="left">
+
+  <label for="FirstName">
+  <input type="text" id="name" name="first name" placeholder="First Name" required /></label>
+  <br><br>
+  <label for="NRIC">
+  <input type="text" id="ic" name="ic" placeholder="NRIC" required /></label>
+  <br><br>
+  <label for="Phoneno.">
+  <input type="text" id="phone" name="Phone no." placeholder="Phone Number" title="8 digits telephone number" pattern="\d{8}" required /></label>
+  <br><br>
+
+ </div>
+
+  <div class="right">
+
+  <label for="LastName">
+  <input type="text" class="right" id="name" name="Last name" placeholder="Last Name" required /></label>
+  <br><br>
+  <label for="Email">
+  <input type="text" id="email" name="email" placeholder="Email Address" required /></label>
+
+ </div>
+  <br>
+  <div class="gender">
+  <label class="gender1" for="male">Male</label>
+  <input class="inline" type="radio" id="male" name="gender" value="Mr" required/>
+  <label class="gender1" for="female">Female</label>
+  <input class="inline" type="radio" id="female" name="gender" value="Mrs" required/>
+  </div>
+
+<br><br>
+
+<div class="address">
+  <h4><u>Address</u></h4>
+  <br>
+  <div class="left">
+  <select id="country" list="Country" name="Country">
+    <option>Select country</option>
+    <option value="AF">Afghanistan</option>
+    <option value="AX">Aland Islands</option>
+    <option value="AL">Albania</option>
+    <option value="DZ">Algeria</option>
+    <option value="AS">American Samoa</option>
+    <option value="AD">Andorra</option>
+    <option value="AO">Angola</option>
+    <option value="AI">Anguilla</option>
+    <option value="AQ">Antarctica</option>
+    <option value="AG">Antigua and Barbuda</option>
+    <option value="AR">Argentina</option>
+    <option value="AM">Armenia</option>
+    <option value="AW">Aruba</option>
+    <option value="AU">Australia</option>
+    <option value="AT">Austria</option>
+    <option value="AZ">Azerbaijan</option>
+    <option value="BS">Bahamas</option>
+    <option value="BH">Bahrain</option>
+    <option value="BD">Bangladesh</option>
+    <option value="BB">Barbados</option>
+    <option value="BY">Belarus</option>
+    <option value="BE">Belgium</option>
+    <option value="BZ">Belize</option>
+    <option value="BJ">Benin</option>
+    <option value="BM">Bermuda</option>
+    <option value="BT">Bhutan</option>
+    <option value="BO">Bolivia</option>
+    <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+    <option value="BA">Bosnia and Herzegovina</option>
+    <option value="BW">Botswana</option>
+    <option value="BV">Bouvet Island</option>
+    <option value="BR">Brazil</option>
+    <option value="IO">British Indian Ocean Territory</option>
+    <option value="BN">Brunei Darussalam</option>
+    <option value="BG">Bulgaria</option>
+    <option value="BF">Burkina Faso</option>
+    <option value="BI">Burundi</option>
+    <option value="KH">Cambodia</option>
+    <option value="CM">Cameroon</option>
+    <option value="CA">Canada</option>
+    <option value="CV">Cape Verde</option>
+    <option value="KY">Cayman Islands</option>
+    <option value="CF">Central African Republic</option>
+    <option value="TD">Chad</option>
+    <option value="CL">Chile</option>
+    <option value="CN">China</option>
+    <option value="CX">Christmas Island</option>
+    <option value="CC">Cocos (Keeling) Islands</option>
+    <option value="CO">Colombia</option>
+    <option value="KM">Comoros</option>
+    <option value="CG">Congo</option>
+    <option value="CD">Congo, Democratic Republic of the Congo</option>
+    <option value="CK">Cook Islands</option>
+    <option value="CR">Costa Rica</option>
+    <option value="CI">Cote D'Ivoire</option>
+    <option value="HR">Croatia</option>
+    <option value="CU">Cuba</option>
+    <option value="CW">Curacao</option>
+    <option value="CY">Cyprus</option>
+    <option value="CZ">Czech Republic</option>
+    <option value="DK">Denmark</option>
+    <option value="DJ">Djibouti</option>
+    <option value="DM">Dominica</option>
+    <option value="DO">Dominican Republic</option>
+    <option value="EC">Ecuador</option>
+    <option value="EG">Egypt</option>
+    <option value="SV">El Salvador</option>
+    <option value="GQ">Equatorial Guinea</option>
+    <option value="ER">Eritrea</option>
+    <option value="EE">Estonia</option>
+    <option value="ET">Ethiopia</option>
+    <option value="FK">Falkland Islands (Malvinas)</option>
+    <option value="FO">Faroe Islands</option>
+    <option value="FJ">Fiji</option>
+    <option value="FI">Finland</option>
+    <option value="FR">France</option>
+    <option value="GF">French Guiana</option>
+    <option value="PF">French Polynesia</option>
+    <option value="TF">French Southern Territories</option>
+    <option value="GA">Gabon</option>
+    <option value="GM">Gambia</option>
+    <option value="GE">Georgia</option>
+    <option value="DE">Germany</option>
+    <option value="GH">Ghana</option>
+    <option value="GI">Gibraltar</option>
+    <option value="GR">Greece</option>
+    <option value="GL">Greenland</option>
+    <option value="GD">Grenada</option>
+    <option value="GP">Guadeloupe</option>
+    <option value="GU">Guam</option>
+    <option value="GT">Guatemala</option>
+    <option value="GG">Guernsey</option>
+    <option value="GN">Guinea</option>
+    <option value="GW">Guinea-Bissau</option>
+    <option value="GY">Guyana</option>
+    <option value="HT">Haiti</option>
+    <option value="HM">Heard Island and Mcdonald Islands</option>
+    <option value="VA">Holy See (Vatican City State)</option>
+    <option value="HN">Honduras</option>
+    <option value="HK">Hong Kong</option>
+    <option value="HU">Hungary</option>
+    <option value="IS">Iceland</option>
+    <option value="IN">India</option>
+    <option value="ID">Indonesia</option>
+    <option value="IR">Iran, Islamic Republic of</option>
+    <option value="IQ">Iraq</option>
+    <option value="IE">Ireland</option>
+    <option value="IM">Isle of Man</option>
+    <option value="IL">Israel</option>
+    <option value="IT">Italy</option>
+    <option value="JM">Jamaica</option>
+    <option value="JP">Japan</option>
+    <option value="JE">Jersey</option>
+    <option value="JO">Jordan</option>
+    <option value="KZ">Kazakhstan</option>
+    <option value="KE">Kenya</option>
+    <option value="KI">Kiribati</option>
+    <option value="KP">Korea, Democratic People's Republic of</option>
+    <option value="KR">Korea, Republic of</option>
+    <option value="XK">Kosovo</option>
+    <option value="KW">Kuwait</option>
+    <option value="KG">Kyrgyzstan</option>
+    <option value="LA">Lao People's Democratic Republic</option>
+    <option value="LV">Latvia</option>
+    <option value="LB">Lebanon</option>
+    <option value="LS">Lesotho</option>
+    <option value="LR">Liberia</option>
+    <option value="LY">Libyan Arab Jamahiriya</option>
+    <option value="LI">Liechtenstein</option>
+    <option value="LT">Lithuania</option>
+    <option value="LU">Luxembourg</option>
+    <option value="MO">Macao</option>
+    <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+    <option value="MG">Madagascar</option>
+    <option value="MW">Malawi</option>
+    <option value="MY">Malaysia</option>
+    <option value="MV">Maldives</option>
+    <option value="ML">Mali</option>
+    <option value="MT">Malta</option>
+    <option value="MH">Marshall Islands</option>
+    <option value="MQ">Martinique</option>
+    <option value="MR">Mauritania</option>
+    <option value="MU">Mauritius</option>
+    <option value="YT">Mayotte</option>
+    <option value="MX">Mexico</option>
+    <option value="FM">Micronesia, Federated States of</option>
+    <option value="MD">Moldova, Republic of</option>
+    <option value="MC">Monaco</option>
+    <option value="MN">Mongolia</option>
+    <option value="ME">Montenegro</option>
+    <option value="MS">Montserrat</option>
+    <option value="MA">Morocco</option>
+    <option value="MZ">Mozambique</option>
+    <option value="MM">Myanmar</option>
+    <option value="NA">Namibia</option>
+    <option value="NR">Nauru</option>
+    <option value="NP">Nepal</option>
+    <option value="NL">Netherlands</option>
+    <option value="AN">Netherlands Antilles</option>
+    <option value="NC">New Caledonia</option>
+    <option value="NZ">New Zealand</option>
+    <option value="NI">Nicaragua</option>
+    <option value="NE">Niger</option>
+    <option value="NG">Nigeria</option>
+    <option value="NU">Niue</option>
+    <option value="NF">Norfolk Island</option>
+    <option value="MP">Northern Mariana Islands</option>
+    <option value="NO">Norway</option>
+    <option value="OM">Oman</option>
+    <option value="PK">Pakistan</option>
+    <option value="PW">Palau</option>
+    <option value="PS">Palestinian Territory, Occupied</option>
+    <option value="PA">Panama</option>
+    <option value="PG">Papua New Guinea</option>
+    <option value="PY">Paraguay</option>
+    <option value="PE">Peru</option>
+    <option value="PH">Philippines</option>
+    <option value="PN">Pitcairn</option>
+    <option value="PL">Poland</option>
+    <option value="PT">Portugal</option>
+    <option value="PR">Puerto Rico</option>
+    <option value="QA">Qatar</option>
+    <option value="RE">Reunion</option>
+    <option value="RO">Romania</option>
+    <option value="RU">Russian Federation</option>
+    <option value="RW">Rwanda</option>
+    <option value="BL">Saint Barthelemy</option>
+    <option value="SH">Saint Helena</option>
+    <option value="KN">Saint Kitts and Nevis</option>
+    <option value="LC">Saint Lucia</option>
+    <option value="MF">Saint Martin</option>
+    <option value="PM">Saint Pierre and Miquelon</option>
+    <option value="VC">Saint Vincent and the Grenadines</option>
+    <option value="WS">Samoa</option>
+    <option value="SM">San Marino</option>
+    <option value="ST">Sao Tome and Principe</option>
+    <option value="SA">Saudi Arabia</option>
+    <option value="SN">Senegal</option>
+    <option value="RS">Serbia</option>
+    <option value="CS">Serbia and Montenegro</option>
+    <option value="SC">Seychelles</option>
+    <option value="SL">Sierra Leone</option>
+    <option value="SG">Singapore</option>
+    <option value="SX">Sint Maarten</option>
+    <option value="SK">Slovakia</option>
+    <option value="SI">Slovenia</option>
+    <option value="SB">Solomon Islands</option>
+    <option value="SO">Somalia</option>
+    <option value="ZA">South Africa</option>
+    <option value="GS">South Georgia and the South Sandwich Islands</option>
+    <option value="SS">South Sudan</option>
+    <option value="ES">Spain</option>
+    <option value="LK">Sri Lanka</option>
+    <option value="SD">Sudan</option>
+    <option value="SR">Suriname</option>
+    <option value="SJ">Svalbard and Jan Mayen</option>
+    <option value="SZ">Swaziland</option>
+    <option value="SE">Sweden</option>
+    <option value="CH">Switzerland</option>
+    <option value="SY">Syrian Arab Republic</option>
+    <option value="TW">Taiwan, Province of China</option>
+    <option value="TJ">Tajikistan</option>
+    <option value="TZ">Tanzania, United Republic of</option>
+    <option value="TH">Thailand</option>
+    <option value="TL">Timor-Leste</option>
+    <option value="TG">Togo</option>
+    <option value="TK">Tokelau</option>
+    <option value="TO">Tonga</option>
+    <option value="TT">Trinidad and Tobago</option>
+    <option value="TN">Tunisia</option>
+    <option value="TR">Turkey</option>
+    <option value="TM">Turkmenistan</option>
+    <option value="TC">Turks and Caicos Islands</option>
+    <option value="TV">Tuvalu</option>
+    <option value="UG">Uganda</option>
+    <option value="UA">Ukraine</option>
+    <option value="AE">United Arab Emirates</option>
+    <option value="GB">United Kingdom</option>
+    <option value="US">United States</option>
+    <option value="UM">United States Minor Outlying Islands</option>
+    <option value="UY">Uruguay</option>
+    <option value="UZ">Uzbekistan</option>
+    <option value="VU">Vanuatu</option>
+    <option value="VE">Venezuela</option>
+    <option value="VN">Viet Nam</option>
+    <option value="VG">Virgin Islands, British</option>
+    <option value="VI">Virgin Islands, U.s.</option>
+    <option value="WF">Wallis and Futuna</option>
+    <option value="EH">Western Sahara</option>
+    <option value="YE">Yemen</option>
+    <option value="ZM">Zambia</option>
+    <option value="ZW">Zimbabwe</option>
+</select>
+  <br><br>
+  <label for="address1">
+  <input type="text" id="address1" name="address1" placeholder="Address 1" required /></label></div>
+  <div class="right">
+  <label for="city">
+  <input type="text" id="city" name="city" placeholder="City" required /></label>
+  <br><br>
+  <label for="address2">
+  <input type="text" id="address2" name="address2" placeholder="Address 2" required /></label></div>
+  <div class="right2">
+  <br>
+  <label for="zip/postalcode">
+  <input type="text" id="zip/postal Code" name="zip/postal Code" placeholder="Zip/Postal Code" required /></label></div>
+  <br><br>
+</div>
+
+<div class="hotelrewards" required>
+  <h4><u>Join/Prefer Hotel Rewards</u></h4>
+  <br>
+  <div class="rewards">
+  <label>
+  <input type="checkbox" class="radio" value="1" name="yes" id="yes" /> Yes! I would like to join the Hotel loyalty program.</label>
+  <br><br>
+  <label>
+  <input type="checkbox" class="radio" value="1" name="no" id="no" /> No</label></div>
+</div>
+ <br>
+ <div class="Additionaldetails">
+   <h4><u>Addition Details and Preferences</u></h4>
+   <br>
+   <input type="text" id="addtionaldetails" name="addtionaldetails"/>
+ </div>
+ <br><br>
+
+ <div class="policies">
+   <h3><b><em>Policies - On Reservations</em></b></h3><br>
+  <p><b><u>Holding Your Reservation:</b></u><br>
+    We will need a credit card number to reserve your room 1 days after your booking.<br>
+    <b><u>Cancelling Your Reservation:</b></u><br>
+    You may cancel your reservation for no charge before <b>11:59 PM local hotel time on July 30, 2022</b> (2 day[s] before arrival).<br>
+    Please note that we will assess a fee of <b>1781.55 SGD</b> if you must cancel after this deadline.<br>
+    <b><u>Modifying Your Reservation:</b></u><br>
+    Please note that a change in the length or dates of your reservation may result in a rate change.</p></div>
+  <br><br>
+  <div class="Acknowledge">
+    <h3><u>Acknowledgement*</u></h3>
+    <br>
+    <input type="checkbox" class="radio" value="1" name="yes" id="yes" /> You have successfully checked in the premises and you find the unit to be as expected.<br>
+    <input type="checkbox" class="radio" value="1" name="yes" id="yes" /> I acknowledge this document, it can be used as proof of my stay or in any other related dispute.<br>
+    <input type="checkbox" class="radio" value="1" name="yes" id="yes" /> I hereby agree to the T & C stated above and that all information provided by me is true.<br>
+  </div>
+ <br><br><br>
+ <button class="submit" type="submit" >Proceed to payment >></button></form></div>
+ <br><br>
+</body>
+<footer class="footer">
+    <div class="footer__addr">
+        <h1 class="footer__logo"><br>OXFORD SUITES</h1>
+
+        <h2>Location</h2>
+
+        <address>
+          One Raffles Place, Singapore 048616<br><br>
+
+          <a class="footer__btn" href="mailto:224627G@mymail.nyp.edu.sg">Email Us</a>
+        </address>
+      </div>
+
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Rooms & Suites</h2>
+    <!-- Optional content -->
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Room Bookings</a>
+            </li>
+
+            <li>
+              <a href="#">Suite Gallery</a>
+            </li>
+
+            <li>
+              <a href="#">Meeting & Events</a>
+            </li>
+          </ul>
+        </li>
+    <!-- Optional content -->
+        <li class="nav__item">
+          <h2 class="nav__title">Others</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Gallery</a>
+            </li>
+
+            <li>
+              <a href="#">Dining</a>
+            </li>
+
+            <li>
+              <a href="#">Offers</a>
+            </li>
+          </ul>
+          </li>
+
+        <li class="nav__item">
+          <h3 class="nav__title">Legal</h3>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+          </ul>
+        </li>
+
+    <div class="legal">
+        <p>&copy; 2022 Nanyang Polytechnic. All rights reserved.</p>
+      </div>
+</footer>
+</main>
+</html>
