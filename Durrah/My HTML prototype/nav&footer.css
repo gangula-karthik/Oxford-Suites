@@ -8,42 +8,48 @@ body {
 }
 
 nav {
-  width: 100%;
-  top: 0;
-  position: sticky;
-  z-index: 3;
+  background-color:rgb(0, 0, 0);
+  left: 0px;
+  top: 0px;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden;
-  background-color: black;
+nav h1{
+  font-family: 'Bodoni Moda', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 58px;
+  color: #FFFF;
+  display: inline-block;
 }
 
-.dining,.facilities,.events,.gallery,.rooms,.contact{
-  float: right;
-  font-family: "Libre Baskerville", serif;
+
+.logo img {
+  height: 60px;
+  width: 60px;
+}
+.nav-links{
+  display: flex; 
+  justify-content: space-around;
+  width:55%;
+  height: 10%;
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+}
+
+.nav-links li{ 
+  list-style: none; 
+}
+
+.nav-links a{ 
+  color: white; 
+  text-decoration: none; 
+  font-weight: bold; 
   font-size: 14px;
-  padding-top: 32px;
-  padding-left: 20px;
-  margin-right: 10px;
-  color: white;
-}
-
-li a {
-  color: white;
-  text-align: center;
-  padding: 18px;
-  text-decoration: none;
-}
-
-li .home {
   float: left;
-  font-size: 30px;
-  font-family: "Playfair Display";
-  color: white;
+  padding-top: 7px;
+  letter-spacing: 1.5px;
+  line-height: 30px;
 }
 
 .underline-hover-effect {
