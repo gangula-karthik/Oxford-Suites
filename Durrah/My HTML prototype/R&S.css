@@ -329,12 +329,12 @@ flex: 70%;
 }
 
 /* Fading animation */
-.fade {
-  animation-name: fade;
+.fadeSlides {
+  animation-name: fadeSlides;
   animation-duration: 1.5s;
 }
 
-@keyframes fade {
+@keyframes fadeSlides {
   from {opacity: .4}
   to {opacity: 1}
 }
