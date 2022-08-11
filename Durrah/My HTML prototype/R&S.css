@@ -171,12 +171,24 @@ flex: 70%;
   transform: translate(-50%, -50%);
 }
 
-.image {
+.hotelimage {
   display: block;
   position: relative;
   width: 100%;
   height: 510px;
   filter: brightness(40%);
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-family: 'Playfair display';
+  font-size: 1000px;
+  color: white;
+  position: absolute;
 }
 
 .header-overlay {
