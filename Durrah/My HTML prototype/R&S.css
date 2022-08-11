@@ -176,6 +176,7 @@ flex: 70%;
   position: relative;
   width: 100%;
   height: 510px;
+  filter: brightness(40%);
 }
 
 .header-overlay {
