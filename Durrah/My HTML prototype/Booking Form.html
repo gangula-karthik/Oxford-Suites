@@ -17,12 +17,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat+Alternates&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Mulish:wght@300&family=PT+Sans&family=Source+Serif+Pro:wght@300&family=Space+Mono&family=Tiro+Kannada&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Joan&family=Libre+Baskerville&family=Mulish:wght@300&family=PT+Sans&family=Source+Serif+Pro:wght@300&family=Space+Mono&family=Tiro+Kannada&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <main>
   <body>
     <nav class="navbar fixed-top">
       <div class="logo">
-        <img src="oxfordsuites.png" class="d-inline-block align-top" alt="logo">
+        <img src="oxfordsuites_copy.png" class="d-inline-block align-top" alt="logo">
         <h1>OXFORD SUITES</h1>
       </div>
       <ul class="nav-links">
@@ -469,5 +470,32 @@
         <p>&copy; 2022 Nanyang Polytechnic. All rights reserved.</p>
       </div>
 </footer>
+
+<script>
+  // responsive navbar animations
+const navSlide = () => {
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-links");
+    const navLinks = document.querySelectorAll(".nav-links li");
+
+    //Toggle Nav
+    burger.addEventListener("click", () => {
+        nav.classList.toggle("nav-active");
+        //Animate Links
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = ""
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+            }
+        });
+        //burger animation
+        burger.classList.toggle("toggle");
+    });
+
+}
+
+  navSlide();
+</script>
 </main>
 </html>
