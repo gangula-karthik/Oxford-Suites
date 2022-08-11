@@ -26,7 +26,6 @@ font-size: 18px;
 font-family: "playfair display";
 margin: auto;
 border-radius:10px;
-float: left;
 }
 .button:hover {
   background: #e2ca81;
