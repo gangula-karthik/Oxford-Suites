@@ -18,8 +18,8 @@
   <body>
 
     <nav class="navbar fixed-top">
-  		<div class="logo">
-  			<img src="oxfordsuites.png" class="d-inline-block align-top" alt="logo">
+  		<div class="logo mr-auto">
+  			<img src="oxfordsuites_copy.png" class="d-inline-block align-top" alt="logo">
   			<h1>OXFORD SUITES</h1>
   		</div>
   		<ul class="nav-links ml-auto">
@@ -42,7 +42,7 @@
 
   <div class="header-overlay"></div>
     <div class="header-main">
-       <img src="images/Main pic2.webp" >
+       <img src="Main pic2.webp" >
     </div>
    <div class="text">
        <h1>
@@ -65,7 +65,7 @@
      </div>
     </div>
       <div class="img">
-        <img src="images/wedding2.jpg">
+        <img src="wedding2.jpg">
       </div>
       <div class ="maintext visible">
         <div class="h1">Weddings</div>
@@ -80,7 +80,7 @@
 
  <div id="Charity" class="content2">
    <div class="img">
-    <img src="images/charity2.png">
+    <img src="charity2.png">
    </div>
    <div class ="maintext">
     <div class="h1">Charity</div>
@@ -105,7 +105,7 @@
          <button class="button" type="submit"><a class="book" href="newforms.html">Book Now</a></button></p></div>
     </div>
       <div class = "img">
-       <img src="images/seminars2.jpg">
+       <img src="seminars2.jpg">
      </div>
 
      <div class ="maintext visible">
@@ -121,7 +121,7 @@
 
  <div id="Hackathon" class="content4">
    <div class = "img">
-     <img src="images/hackathon2.jpg">
+     <img src="hackathon2.jpg">
   </div>
    <div class = "maintext">
     <div class="h1"> Hackathon</div>
@@ -246,5 +246,31 @@
 
   <script src="js/jquery-3.3.1.min.js"></script>
 	<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+<script>
+  // responsive navbar animations
+const navSlide = () => {
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-links");
+    const navLinks = document.querySelectorAll(".nav-links li");
+
+    //Toggle Nav
+    burger.addEventListener("click", () => {
+        nav.classList.toggle("nav-active");
+        //Animate Links
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = ""
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+            }
+        });
+        //burger animation
+        burger.classList.toggle("toggle");
+    });
+
+}
+
+navSlide();
+</script>
 </main>
 </html>
