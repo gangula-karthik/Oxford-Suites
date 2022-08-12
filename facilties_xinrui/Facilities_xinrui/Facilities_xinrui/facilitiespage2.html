@@ -23,8 +23,8 @@
 </head>
   <body>
     <nav class="navbar fixed-top">
-      <div class="logo" style="margin-left: auto; justify-content: flex-start !important;">
-        <img src="oxfordsuites.png" style="border:none;" class="d-inline-block align-top" alt="logo">
+      <div class="logo mr-auto">
+        <img src="oxfordsuites.png" style="border: none;" class="d-inline-block align-top" alt="logo">
         <h1>OXFORD SUITES</h1>
       </div>
       <ul class="nav-links ml-auto">
@@ -33,7 +33,7 @@
         <li><a class="underline-hover-effect facilities" href="#facilities">Facilities</a></li>
         <li><a class="underline-hover-effect events" href="#events">Events</a></li>
         <li><a class="underline-hover-effect contact" href="#contact">Contact Us</a></li>
-        <li><a class="gallery" href="#gallery"><span style="color: white; font-size: 25px;"class="material-symbols-outlined">
+        <li><a class="gallery" href="#gallery"><span style="color: white; font-size: 30px;"class="material-symbols-outlined">
           account_circle
           </span></a></li>
       </ul>
@@ -43,7 +43,6 @@
         <div class="line3"></div>
       </div>
     </nav>
-
 
     <div class="text">
           <img style=" width:100%!important;height:400px!important;border:none;margin: 0 !important;"src = "page2img.jpg"></div>
@@ -182,4 +181,30 @@
          <p>&copy; 2022 Nanyang Polytechnic. All rights reserved.</p>
        </div>
  </footer>
+
+ <script>
+  const navSlide = () => {
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-links");
+    const navLinks = document.querySelectorAll(".nav-links li");
+
+    //Toggle Nav
+    burger.addEventListener("click", () => {
+        nav.classList.toggle("nav-active");
+        //Animate Links
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = ""
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+            }
+        });
+        //burger animation
+        burger.classList.toggle("toggle");
+    });
+
+}
+
+navSlide();
+ </script>
 </html>

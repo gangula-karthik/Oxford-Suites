@@ -75,7 +75,7 @@ html {
   }
 
   h3 {
-    width        : 100%!important;
+    width: 100%!important;
     margin: 0!important !important;
     padding-left : 0!important;
     font-size    : 27px!important;
@@ -2266,8 +2266,8 @@ body {
 
 * {
   max-width : 100% !important;
-  margin    : 0px !important;
-  padding   : 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .right {
