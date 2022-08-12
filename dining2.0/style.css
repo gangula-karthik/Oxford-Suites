@@ -825,7 +825,7 @@ input {
   align-items: center;
   justify-content: center;
   height: 36px;
-  width: 100px;
+  width: 150px;
   background-color: #B7A46A;
   border-radius: 100px;
   color: rgb(0, 0, 0);
@@ -842,7 +842,7 @@ input {
   align-items: center;
   justify-content: center;
   height: 36px;
-  max-width: max-content;
+  width: 150px;
   background-color: #e2ca81;
   border-radius: 100px;
   color:rgb(0, 0, 0);
@@ -858,7 +858,7 @@ input {
   align-items: center;
   justify-content: center;
   height: 36px;
-  max-width: max-content;
+  width: 150px;
   background-color: #e2ca81;
   border-radius: 100px;
   color:rgb(0, 0, 0);
