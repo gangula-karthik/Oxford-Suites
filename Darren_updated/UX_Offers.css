@@ -193,6 +193,7 @@ nav h1{
   text-align: center;
   font-size: 30px;
   margin-bottom: 0.5%;
+  margin-top: 100px;
 }
 
 .underline {
@@ -247,9 +248,6 @@ nav h1{
   padding: 5% 5% 5% 5%;
 }
 
-.offer-price {
-
-}
 
 .row2-container {
   display: flex;
