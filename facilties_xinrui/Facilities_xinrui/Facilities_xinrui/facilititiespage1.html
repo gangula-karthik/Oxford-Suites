@@ -24,7 +24,7 @@
 <main>
   <body>
     <nav class="navbar fixed-top">
-      <div class="logo" style="margin-left: auto; justify-content: flex-start !important;">
+      <div class="logo mr-auto">
         <img src="oxfordsuites.png" style="border:none;" class="d-inline-block align-top" alt="logo">
         <h1>OXFORD SUITES</h1>
       </div>
@@ -189,10 +189,32 @@ Our fitness center is air-conditioned and has a sanitizer and air freshener.
 </footer>
 
 
+<script defer>
+  // responsive navbar animations
+const navSlide = () => {
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-links");
+    const navLinks = document.querySelectorAll(".nav-links li");
 
+    //Toggle Nav
+    burger.addEventListener("click", () => {
+        nav.classList.toggle("nav-active");
+        //Animate Links
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = ""
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+            }
+        });
+        //burger animation
+        burger.classList.toggle("toggle");
+    });
 
+}
 
-
+navSlide();
+</script>
 
 </main>
 </html>
