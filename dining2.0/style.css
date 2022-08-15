@@ -462,6 +462,7 @@ input {
   border-radius:100px;
   float: right;
   margin-bottom: 2%;
+  margin-right: 25px;
   width: 160px;
   height: 40px;
   font-family: "Inter", sans-serif;
@@ -475,6 +476,8 @@ input {
   transition: 550ms smooth ease-in-out;
   color: black;
 }
+
+
 
 /* time section of the restaurant cards */
 .times {
