@@ -21,13 +21,13 @@
 			<img src="oxfordsuites.png" class="d-inline-block align-top" alt="logo">
 			<h1>OXFORD SUITES</h1>
 		</div>
-		<ul class="nav-links">
-			<li><a class="underline-hover-effect rooms" href="#rooms">Rooms</a></li>
-			<li><a class="underline-hover-effect dining" href="index.html">Dining</a></li>
-			<li><a class="underline-hover-effect facilities" href="#facilities">Facilities</a></li>
-			<li><a class="underline-hover-effect events" href="#events">Events</a></li>
-			<li><a class="underline-hover-effect contact" href="#contact">Contact Us</a></li>
-			<li><a class="gallery" href="#gallery"><span style="color: white; font-size: 30px;"class="material-symbols-outlined">
+		<ul class="nav-links ml-auto">
+			<li><a class="underline-hover-effect rooms text-decoration-none" href="#rooms">Rooms</a></li>
+			<li><a class="underline-hover-effect dining text-decoration-none" href="index.html">Dining</a></li>
+			<li><a class="underline-hover-effect facilities text-decoration-none" href="#facilities">Facilities</a></li>
+			<li><a class="underline-hover-effect events text-decoration-none" href="#events">Events</a></li>
+			<li><a class="underline-hover-effect contact text-decoration-none" href="#contact">Contact Us</a></li>
+			<li><a class="gallery text-decoration-none" href="#gallery"><span style="color: white; font-size: 30px;"class="material-symbols-outlined">
 				account_circle
 				</span></a></li>
 		</ul>
@@ -36,12 +36,15 @@
 			<div class="line2"></div>
 			<div class="line3"></div>
 		</div>
+		<div class="progress-container">
+			<div class="progress-bar" id="myBar"></div>
+		  </div>
 	</nav>
 	<section class="reviews-and-book-now">
 		<ul>
 			<li style="float:left;text-align:left;"><h1>The Oxford Suites Singapore</h1></li>
 			<li style="float:left;text-align:left;margin-top: 1.76%;">4.3 stars</li>
-			<li style="float:left;text-align:left;margin-top: 1.76%; text-decoration: none;"><a style="color: white;" href="#open">Leave a review</a></li>
+			<li style="float:left;text-align:left;margin-top: 1.76%; text-decoration: none;"><a style="color: rgb(255, 255, 255);" id="open">Leave a review</a></li>
 			<li><button onclick="button_pop_out()">RESERVE <i class="fa-solid fa-angle-down"></i></button></li>
 			<li>
 				<lord-icon
@@ -54,7 +57,54 @@
 		</ul>
 	</section>
 
-   
+	
+	<div class="modal-container">
+        <div class="modal">
+            <div> 
+                <h1>REVIEWS AND RATINGS <span id="close" style="float:right;" class="material-symbols-outlined">cancel</span></h1>
+            </div>
+            <hr>
+
+            <h2>How was your experience ?</h2>
+
+            <form method="get" action="reviews_form_processor.html">
+                <table style="margin-left:auto;margin-right:auto;">
+                    <tr>
+                        <td><label for="reviews">Rating: </label></td>
+                        <td><div class="rate">
+                            <input type="radio" id="star5" name="Rating" value="5" />
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="Rating" value="4" />
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="Rating" value="3" />
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="Rating" value="2" />
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="Rating" value="1" />
+                            <label for="star1" title="text">1 star</label>
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Name: </label></td>
+                        <td><input type="text" name="name" placeholder="Enter your name"  value="" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Email: </label></td>
+                        <td><input type="email" name="email" placeholder="Enter your email"  value="" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Review: </label></td>
+                        <td><textarea name="review" style="width: 400px; height: 70px;" value="" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input onclick="createClick()" type="submit" value="POST" rowspan="2"></td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+
+
 
 	<section class="book">
 		<div class="container flex">
@@ -92,13 +142,13 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="caption text-center">
 		<h1>DINING</h1>
 		<span class="material-symbols-outlined" id="down-arrow">expand_more</span>
 	</div>
 
-	
+
 	<div id="course" class="row justify-content-center">
 		<div class="col-md-8 text-center">
 			<h1 style="font-family: 'Bodoni Moda', serif; font-size: 3em; position: relative; padding-top: 15%;margin-bottom: 5%;text-align: center;">
@@ -111,9 +161,7 @@
 					</div>
 					<div class="card_body">
 						<h1>La Maison 1888</h1>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur reiciendis accusantium
-							eius dignissimos facilis optio odit a praesentium voluptas fugit. Voluptatibus debitis
-							accusamus laborum iste aspernatur?</p>
+						<p>The destination dining establishment of The Oxford Suites, La Maison 1888 exudes timeless elegance and sophistication—a perfect dining room for an extraordinary experience of classic French cuisine.</p>
 						<br>
 						<span class="material-symbols-outlined">schedule </span>
 						<span class="times">Open everyday</span>
@@ -121,8 +169,7 @@
 						<p class="times_list">Sat-Sun: 6:30 PM - 10:30PM</p>
 					</div>
 					<div class="card_footer">
-						<a href="menu_page1.html" target="_blank"><button class="reservation_button" style="margin-right: 25px;">View
-								Menu</button></a>
+						<a href="menu_page1.html" target="_blank"><button class="reservation_button" style="margin-right: 25px;">VIEW MENU</button></a>
 						<a href="dining_reservation.html" target="_blank"><button class="reservation_button"
 								style="margin-right: 25px;text-align: center;align-items: center;">RESERVE</button></a>
 					</div>
@@ -145,8 +192,7 @@
 						<p class="times_list">6:30 AM - 10:30PM</p>
 					</div>
 					<div class="card_footer">
-						<a href="menu_page3.html" target="_blank"><button class="reservation_button" style="margin-right: 25px;">View
-								Menu</button></a>
+						<a href="menu_page3.html" target="_blank"><button class="reservation_button" style="margin-right: 25px;">VIEW MENU</button></a>
 						<a href="dining_reservation.html" target="_blank"><button class="reservation_button"
 								style="margin-right: 25px; line-height: 0px;">RESERVE</button></a>
 					</div>
@@ -169,8 +215,7 @@
 						<p class="times_list">6:30 PM - 10:30PM</p>
 					</div>
 					<div class="card_footer">
-						<a href="menu_page2.html" target="_blank"><button class="reservation_button" style="margin-right: 25px;">View
-								Menu</button></a>
+						<a href="menu_page2.html" target="_blank"><button class="reservation_button" style="margin-right: 25px;">VIEW MENU</button></a>
 						<a href="dining_reservation.html" target="_blank"><button class="reservation_button"
 								style="margin-right: 25px;">RESERVE</button></a>
 					</div>
@@ -193,8 +238,7 @@
 
 					</div>
 					<div class="card_footer">
-						<a href="menu_page4.html" target="_blank"><button class="reservation_button" style="margin-right: 25px;">View
-								Menu</button></a>
+						<a href="menu_page4.html" target="_blank"><button class="reservation_button" style="margin-right: 25px;">VIEW MENU</button></a>
 					</div>
 				</div>
 			</section>
@@ -211,46 +255,31 @@
 		<!-- <h1 style="text-align: center;margin:30px;font-size: 30px;">Check out some of our reviews</h1> -->
 		<div class="review_card_1 card_shadow">
 			<h1>Dan Smith</h1>
-			<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span
-				class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span
-				class="material-symbols-outlined">star</span>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellat voluptatibus, assumenda sequi
-				voluptatem voluptate deserunt, aliquam laudantium labore aut maxime expedita ad ut, architecto
-				accusamus.</p>
+			<i class="fa-solid fa-star star-select"></i><i class="fa-solid fa-star star-select"></i><i class="fa-solid fa-star star-select"></i><i class="fa-solid fa-star star-select"></i><i class="fa-solid fa-star star-select"></i>
+			<p>We were celebrating our friend's birthday dinner here and I have to say the food was good and exceeded my expectations! Especially their bread. Lovely ambience as well, well suited for special occasions.</p>
 		</div>
 
 		<div class="review_card_1 card_shadow">
 			<h1>Elon Musk</h1>
-			<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span
-				class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span style="color: grey"
-				class="material-symbols-outlined">star</span>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellat voluptatibus, assumenda sequi
-				voluptatem voluptate deserunt, aliquam laudantium labore aut maxime expedita ad ut, architecto
-				accusamus.</p>
+			<i class="fa-solid fa-star star-select"></i><i class="fa-solid fa-star star-select"></i><i class="fa-solid fa-star star-select"></i><i class="fa-solid fa-star star-select"></i><i class="fa-solid fa-star no-select"></i>
+			<p>Fantastic dining experience at this restaurant. They have an amazing Japanese chef who serves up great dish creations. Each of their course meals were like unique artworks.</p>
 		</div>
 
 		<div class="review_card_1 card_shadow">
 			<h1>Peter Parker</h1>
-			<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span
-				class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span
-				class="material-symbols-outlined">star</span>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellat voluptatibus, assumenda sequi
-				voluptatem voluptate deserunt, aliquam laudantium labore aut maxime expedita ad ut, architecto
-				accusamus.</p>
+			<i class="fa-solid fa-star star-select"></i><i class="fa-solid fa-star star-select"></i><i class="fa-solid fa-star star-select"></i><i class="fa-solid fa-star star-select"></i><i class="fa-solid fa-star no-select"></i>
+			<p>They serve 2 different types and the foccacia is my favourite. None of the dishes blew my mind but they all had something to appreciate about them. </p>
 		</div>
 
 		<div class="review_card_1 card_shadow">
 			<h1>John Adams</h1>
-			<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span
-				class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repellat voluptatibus, assumenda sequi
-				voluptatem voluptate deserunt, aliquam laudantium labore aut maxime expedita ad ut, architecto
-				accusamus.</p>
+			<i class="fa-solid fa-star star-select"></i><i class="fa-solid fa-star star-select"></i><i class="fa-solid fa-star star-select"></i><i class="fa-solid fa-star star-select"></i><i class="fa-solid fa-star star-select"></i>
+			<p>Every dish served to us was a work of art in itself while also being absolutely delicious. Staff were very friendly and personable, and explained each course in detail. Would definitely visit again.</p>
 		</div>
 		</div>
 	</section>
 
-	<h1 style="font-family: 'Bodoni Moda', serif; font-size: 3em; position: relative; padding-top: 3%;margin-bottom: 2%;text-align: center;">
+	<h1 id="nearby_op_text"style="font-family: 'Bodoni Moda', serif; font-size: 3em; position: relative; padding-top: 5%;margin-bottom: 2%;text-align: center;">
 		Nearby Options</h1>
 
 
@@ -303,16 +332,16 @@
 	<footer class="footer">
 		<div class="footer__addr">
 			<h1 class="footer__logo"><a href="#home">OXFORD SUITES</a></h1>
-		
+
 			<h2>Location</h2>
-		
+
 			<address>
 			  One Raffles Place, Singapore 048616<br><br>
-		
-			  <a class="footer__btn" href="mailto:224627G@mymail.nyp.edu.sg" style>Email Us <i style="padding-left: 4px;" class="fa-solid fa-envelope"></i></a>
+
+			  <a class="footer__btn" href="mailto:224627G@mymail.nyp.edu.sg" style>Contact <i style="padding-left: 4px;" class="fa-solid fa-envelope"></i></a>
 			</address>
 		  </div>
-		
+
 		  <ul class="footer__nav">
 			<li class="nav__item">
 			  <h2 class="nav__title">Rooms & Suites</h2>
@@ -321,11 +350,11 @@
 				<li>
 				  <a href="#">Room Bookings</a>
 				</li>
-		
+
 				<li>
 				  <a href="#">Suite Gallery</a>
 				</li>
-		
+
 				<li>
 				  <a href="#">Meeting & Events</a>
 				</li>
@@ -334,25 +363,25 @@
 		<!-- Optional content -->
 			<li class="nav__item">
 			  <h2 class="nav__title">Others</h2>
-		
+
 			  <ul class="nav__ul">
 				<li>
 				  <a href="#">Gallery</a>
 				</li>
-		
+
 				<li>
 				  <a href="#">Dining</a>
 				</li>
-		
+
 				<li>
 				  <a href="#">Offers</a>
 				</li>
 			  </ul>
 			  </li>
-		
+
 			<li class="nav__item">
 			  <h3 class="nav__title">Legal</h3>
-		
+
 			  <ul class="nav__ul">
 				<li>
 				  <a href="#">Privacy Policy</a>
@@ -365,6 +394,11 @@
 				</li>
 			  </ul>
 			</li>
+
+		<div class="legal">
+			<p>&copy; 2022 Nanyang Polytechnic. All rights reserved.</p>
+			<a href="#legal">Click here to contact lawyer</a>
+		</div>
 	</footer>
 
 
@@ -376,4 +410,5 @@
 	<!--- End of Script Source Files -->
 
 </body>
+
 </html>
