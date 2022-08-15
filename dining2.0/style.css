@@ -950,17 +950,8 @@ input {
   column-gap: 1.25em;
 }
 
-.legal{
-  display: flex;
-  flex-wrap: wrap;
-  color:#999;
-}
 
-.legal a {
-  display: flex;
-  align-items: center;
-  color: #999;
-}
+
 
 .heart {
   color: #999;
@@ -968,11 +959,7 @@ input {
 
 
 /*media queries*/
-@media screen and (min-width: 24.375em) {
-  .legal .legal__links {
-    margin-left: auto;
-  }
-}
+
 
 @media screen and (min-width: 40.375em) {
   .footer__nav > * {
