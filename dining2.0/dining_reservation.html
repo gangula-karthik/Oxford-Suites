@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dining_reservation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,700&display=swap" rel="stylesheet">
+    <title>Dining Reservation</title>
+</head>
+<body>
+    <nav class="navbar fixed-top">
+        <div class="logo">
+          <img src="oxfordsuites_copy.png" class="d-inline-block align-top" alt="logo">
+          <h1>OXFORD SUITES</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a class="underline-hover-effect rooms" href="#rooms">Rooms</a></li>
+          <li><a class="underline-hover-effect dining" href="index.html">Dining</a></li>
+          <li><a class="underline-hover-effect facilities" href="#facilities">Facilities</a></li>
+          <li><a class="underline-hover-effect events" href="#events">Events</a></li>
+          <li><a class="underline-hover-effect contact" href="#contact">Contact Us</a></li>
+          <li><a class="gallery" href="#gallery"><span style="color: white; font-size: 30px;"class="material-symbols-outlined">
+            account_circle
+            </span></a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    <section class="form_page">
+    <h1>Dining Reservation Form</h1>
+    <form method="get" action="reservation_form_processor.html">
+        <fieldset>
+            <table>
+                <tr></tr>
+                <tr>
+                    <td><label>First Name <span style= "color:red;"> *</span></label></td>
+                    <td><input name="First Name" placeholder="First_name" type="text" required></td>
+                </tr>
+                <tr>
+                    <td><label>Last Name <span style= "color:red;"> *</span></label></td>
+                    <td><input name="Last Name" placeholder="Last_name" type="text" required></td>
+                </tr>
+                <tr>
+                    <td><label>Email <span style= "color:red;"> *</span></label></td>
+                    <td><input name="Email" placeholder="Email" type="email" required></td>
+                </tr>
+                <tr>
+                    <td><label>Phone number <span style= "color:red;">*</span> </label></td>
+                    <td><select>
+                        <option>🇸🇬 +65</option>
+                        <option>🇺🇸 +1</option>
+                        <option>🇦🇪 +971</option>
+                        <option>🇬🇧 +44</option>
+                        <option>🇯🇵 +81</option>
+                        <option>🇨🇳 +86</option>
+                        <option>🇮🇳 +91</option>
+                        <option>🇦🇺 +66</option>
+                        <option>🇲🇾 +60</option>
+                        <option>🇲🇫 +33</option>
+                        <option>🇵🇭 +63</option>
+                        <option>🇻🇳 +84</option>
+                    </select><input name="Phone number: " placeholder="Phone_number" type="tel" minlength="9" maxlength="19" required></td>
+                </tr>
+                <tr>
+                    <td><label>Restaurant<span style= "color:red;"> *</span></label></td>
+                    <td><select required>
+                        <option value="" disabled selected hidden>Choose a restaurant</option>
+                        <option>La Maison 1888</option>
+                        <option>The Altitude Restaurant</option>
+                        <option>Golden Corral Buffet & Grill</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label>Reservation Type <span style= "color:red;">*</span></label></td>
+                    <td><select required>
+                        <option value="" disabled hidden selected>What is the reservation type</option>
+                        <option>VIP/mezzanine</option>
+                        <option>Birthday/Anniversary</option>
+                        <option>Wedding</option>
+                        <option>Corporate</option>
+                        <option>Other</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label>Date <span style= "color:red;">*</span></label></td>
+                    <td><input placeholder="Date" type="date" id="reservation_date" required></td>
+                </tr>
+                <tr>
+                    <td><label>Time <span style= "color:red;">*</span></label></td>
+                    <td><input placeholder="Time" type="time" id="reservation_time" required></td>
+                </tr>
+                <tr>
+                    <td><label>Special Requests</label></td>
+                    <td><input placeholder="Special Requests" contenteditable></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="SUBMIT"><td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    </section>
+
+    <script>
+        var date = new Date();
+        var tdate = date.getDate();
+        var mdate = date.getMonth() + 1;
+        var ydate = date.getUTCFullYear();
+
+        if (mdate < 10){
+            mdate = "0" + mdate;
+        }
+
+        if (tdate < 10){
+            tdate = "0" + tdate;
+        }
+
+        var minDate = ydate + "-" + mdate + "-" + tdate;
+        document.getElementById("reservation_date").setAttribute("min", minDate);
+
+
+        // responsive navbar animations
+const navSlide = () => {
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-links");
+    const navLinks = document.querySelectorAll(".nav-links li");
+
+    //Toggle Nav
+    burger.addEventListener("click", () => {
+        nav.classList.toggle("nav-active");
+        //Animate Links
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = ""
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+            }
+        });
+        //burger animation
+        burger.classList.toggle("toggle");
+    });
+
+}
+
+
+navSlide();
+    </script>
+</body>
+</html>
