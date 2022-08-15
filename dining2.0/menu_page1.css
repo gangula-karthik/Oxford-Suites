@@ -235,7 +235,7 @@ nav h1{
     gap: 15%;
     justify-items: center;
     justify-content: center;
-    
+    margin-top: 9%;
 }
 
 .content img{
@@ -270,7 +270,7 @@ nav h1{
     content: " ";
     position: absolute;
     top: 12px;
-    left: -10px;
+    left: -8px;
     width: 16px;
     height: 16px;
     border-bottom: 4px solid;
