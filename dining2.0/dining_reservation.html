@@ -131,7 +131,7 @@
         }
 
         var minDate = ydate + "-" + mdate + "-" + tdate;
-        var time = date.getHours() + ":" + date.getMinutes() + ":" + "00";
+        var time = date.getHours() + ":" + date.getMinutes();
         document.getElementById("reservation_date").setAttribute("min", minDate);
         document.getElementById("reservation_date").setAttribute("value", minDate);
         document.getElementById("reservation_time").setAttribute("value", time);
