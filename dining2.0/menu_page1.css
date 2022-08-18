@@ -297,7 +297,16 @@ nav h1{
       justify-items: center;
       margin-bottom: 10%;
       gap: 3%;
-      overflow: hidden;
+      overflow: visible;
+  }
+
+  @media (max-width: 1100px){
+    .signature-dish {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        overflow: visible;
+        margin-bottom: 30%;
+    }
   }
 
 .dish1 {
@@ -306,7 +315,8 @@ nav h1{
   background-color: whitesmoke;
   border-radius: 5px;
   font-family: 'Inter', sans-serif;
-  border: 1px solid black;  
+  border: 1px solid black; 
+  overflow: hidden; 
 }
   .dish1 img {
       width: 300px;
@@ -335,6 +345,7 @@ nav h1{
   border-radius: 5px;
   font-family: 'Inter', sans-serif;
   border: 1px solid black;  
+  overflow: hidden;
 }
 
   .dish2 img {
@@ -363,6 +374,7 @@ nav h1{
   border-radius: 5px;
   font-family: 'Inter', sans-serif;
   border: 1px solid black;  
+  overflow: hidden;
 }
 
     .dish3 img {

@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700;6..96,800&display=swap');
+
+
 body {
   color: black;
   margin: 0;
@@ -13,7 +17,7 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1200px){
  .autoCaption-sub, .autoCaption-sub1 {
     display: none;
   }
@@ -82,12 +86,12 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
-nav {
+/* nav {
   width: 100%;
   top: 0;
   position: sticky;
   z-index: 3;
-}
+} */
 
 .underline {
   border: 1px solid #BBA14F;
@@ -147,6 +151,7 @@ nav {
   font-weight: bold;
   font-size: 26px;
   text-align: center;
+  margin-top: 26px;
 }
 
 .recommendations-subheader {
@@ -267,7 +272,7 @@ nav {
 }
 
 /* Fading animation */
-.fade {
+.myfade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -342,6 +347,8 @@ nav {
   width: 180px;
   box-sizing: border-box;
   text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .std-button:hover{
@@ -356,6 +363,7 @@ nav {
   width: 60px;
   height: 40px;
   margin-right: 2%;
+  font-size: 80%;
 }
 
 .content-body-con2 {
@@ -474,7 +482,7 @@ nav {
   flex-direction: row;
   margin: 0% 10% 0% 10%;
 }
-
+/* 
 nav ul {
   list-style-type: none;
   margin: 0px;
@@ -491,8 +499,8 @@ nav ul {
   padding-left: 20px;
   margin-right: 10px;
   color: white;
-}
-
+} */
+/* 
 li a {
   color: white;
   text-align: center;
@@ -505,7 +513,183 @@ li .home {
   font-size: 30px;
   font-family: "Playfair Display", cursive;
   color: white;
+} */
+
+nav {
+  background-color:rgb(0, 0, 0);  
+  left: 0px;
+  top: 0px;
 }
+
+nav h1{
+  font-family: 'Bodoni Moda', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 58px;
+  color: #FFFF;
+  display: inline-block;
+}
+
+
+.logo img {
+  height: 60px;
+  width: 60px;
+}
+
+
+
+
+.nav-links{
+  display: flex; 
+  justify-content: space-around;
+  width:55%;
+  height: 10%;
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+}
+
+.nav-links li{ 
+  list-style: none; 
+}
+
+.nav-links a{ 
+  color: white; 
+  text-decoration: none; 
+  font-weight: bold; 
+  font-size: 14px;
+  float: left;
+  padding-top: 7px;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+}
+
+.underline-hover-effect {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+
+
+.underline-hover-effect::before {
+  content: "";
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #FFE600;
+  transition: width 0.25s ease-out;
+  background-image: linear-gradient(to right, #c18c00, #ffcb00, #fdea1d, #f0ffae, #fdea1d, #ffcb00, #c18c00);
+}
+
+.underline-hover-effect:hover::before {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+::-webkit-scrollbar {
+  display: none; 
+}
+::-webkit-overflow-scrolling{
+  touch-action: auto;
+}
+
+.burger{
+  display: none;
+}
+.burger div{
+  width: 25px;
+  height: 2px;
+  background-color: white; 
+  margin: 5px; 
+  transition: all 0.4s ease;
+}
+
+@media screen and (max-width: 1100px){
+  .nav-links{
+      width:60%;
+      background: hsl(100, 20%, 40% / 0.10);
+  }
+  nav h1{
+    font-family: 'Bodoni Moda', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 58px;
+    color: #FFFF;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+  }
+  .logo img {
+    height: 50px;
+    width: 50px;
+    position: relative; 
+    top: 5px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+
+  body{
+      overflow-x: hidden;
+  }
+  .nav-links{
+      position: fixed;
+      right: 0px;
+      height: 91vh;
+      top: 9.8vh; 
+      background-color:rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(30px);
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      width: 35%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in-out;
+      text-shadow: .1rem .1rem .8rem black;
+  }
+  .nav-links li{
+      opacity: 0;
+  }
+  .burger{ 
+      display: block; 
+      cursor: pointer;
+  }
+}
+
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+  
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+.nav-active { 
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade { 
+  from{ 
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to{ 
+      opacity: 1; 
+      transform: translateX(0px);
+  }
+}
+
 
 .underline-hover-effect {
   display: inline-block;
@@ -530,6 +714,181 @@ li .home {
   left: 0;
   right: 0;
 }
+
+#maps:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#reviews_link:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+ .animation_extended_nav {
+  animation: Slide_up 0.1ss ease-in;
+}
+
+.animation_extended_nav {
+  animation: Slide_down 0.1s ease-in;
+}
+
+ .reviews-and-book-now h1{
+  color: white;
+  font-size: 20px;
+  font-family: Bodoni moda, serif;
+  font-weight: 500;
+}
+
+ .reviews-and-book-now ul li button{
+  border-radius: 100px;
+  background-color: #B7A46A;
+  border: none;
+  height: 40px;
+  width: 180px;
+  box-sizing: border-box;
+  margin-right: 50%;
+}
+
+.reviews-and-book-now ul li button:hover{
+  background: #e2ca81;
+  height: 40px;
+  width: 180px;
+  border-radius: 100px;
+}
+
+@keyframes Slide_up{
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-300px);
+  }
+}
+
+@keyframes Slide_down{
+  0% {
+    transform: translateY(-300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.reviews-and-book-now{
+  overflow: hidden;
+  /* apply flex to get right and left navigations in a row */
+  display: flex;
+  /* push both the blocks to the edges using justify-content */
+  justify-content: space-between;
+  position: sticky;
+  top: 8%;
+  left: 100px;
+  width: 100%;
+  height: 80px;
+  z-index: 5;
+  background-color: rgba(24, 27, 31, 0.5);  
+  backdrop-filter: blur(20px);
+  white-space: normal;
+  padding: 5px;
+}
+/* target the ul and remove the bullets */
+.right-side, .left-side{
+  list-style-type: none;
+}
+/* change li display property from block to inline block */
+.right-side li, .left-side li{
+  display: inline-block;
+  padding-top: 2%;
+}
+/* style the anchor elements */
+.right-side li a, .left-side li a{
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  color: #333;
+  padding: 14px 16px;
+}
+
+@media screen and (max-width: 1160px){
+  .reviews-and-book-now{
+    display: none;
+  }
+}
+
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  border-radius: 10px 0px 0px 10px;
+  align-content: center;
+}
+
+.book {
+  border-radius: 100px;
+  margin-top: -200px;
+  top: 160px;
+  width: 100%;
+  height: 20vh;
+  color: black;
+  z-index: 3;
+  position: sticky;
+  display: none;
+  
+}
+
+.book .input {
+  background: white;
+  padding: 20px 20px 40px 20px;
+}
+
+.book .search {
+  background: #B7A46A;
+  padding: 20px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.book .search:hover {
+  background: #e2ca81;
+  padding: 20px;
+  border-radius: 0px 10px 10px 0px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  outline: none;
+  background: rgb(224, 224, 224);
+  margin-top: 20px;
+  color: rgb(27, 27, 27);
+  border-radius: 10px;
+  font-family: Inter, sans-serif;
+}
+
+::placeholder {
+  color: rgb(27, 27, 27);
+}
+
+.book .search {
+  width: 20%;
+}
+
+.book .search input {
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 55px;
+}
+
 
 .whitespace {
   height: 50px;
@@ -724,3 +1083,4 @@ li .home {
   .footer__nav {
     flex: 2 0px;
   }
+}
