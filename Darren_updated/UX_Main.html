@@ -53,7 +53,7 @@
         </li>
         <li style="color: white;padding-left: 10px;">Rating: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
             class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></li>
-        <li id="reviews_link"><a style="color: white;" id="open">Leave a review</a></li>
+        <li id="reviews_link"><a style="color: white;" id="open" onclick="click_modal()">Leave a review</a></li>
       </ul>
       <!-- left nav -->
       <ul class="left-side">
@@ -96,6 +96,51 @@
       </div>
     </section>
 
+    <div class="reviews_modal">
+      <div> 
+        <h1>REVIEWS AND RATINGS <span id="close" style="float:right;" class="material-symbols-outlined"><a onclick="close_reviews()">cancel</a></span></h1>
+    </div>
+    <hr>
+
+    <h2>How was your experience ?</h2>
+
+    <form method="get" action="reviews_form_processor.html">
+        <table style="margin-left:auto;margin-right:auto;">
+            <tr>
+                <td><label for="reviews">Rating: </label></td>
+                <td><div class="rate">
+                    <input type="radio" id="star5" name="Rating" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="Rating" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="Rating" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="Rating" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="Rating" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                </div></td>
+            </tr>
+            <tr>
+                <td><label for="name">Name: </label></td>
+                <td><input type="text" name="name" placeholder="Enter your name"  value="" required></td>
+            </tr>
+            <tr>
+                <td><label for="name">Email: </label></td>
+                <td><input type="email" name="email" placeholder="Enter your email"  value="" required></td>
+            </tr>
+            <tr>
+                <td><label for="name">Review: </label></td>
+                <td><textarea name="review" style="width: 400px; height: 70px;" value="" required></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input onclick="createClick()" type="submit" value="POST" id="submit_review"rowspan="2"></td>
+            </tr>
+        </table>
+</div>
+    </div>
+
     <div class="mainCon">
       <div class="mySlides myfade">
         <img class="slidesImage" src="slidesImage1.webp" style="height:80%; width:100%">
@@ -120,6 +165,24 @@
         <span class="dot"></span>
       </div>
       <script>
+        function click_modal(){
+          const modal_container = document.querySelector('.reviews_modal');
+          modal_container.style.display = "block";
+          modal_container.style.animation = "fade .2s ease-in-out";
+          const body = document.querySelector('body');
+          body.style.pointerEvents = 'none';
+          body.style.overflow = "hidden";
+          modal_container.style.pointerEvents = 'auto';
+        }
+        function close_reviews(){
+          const modal_container = document.querySelector('.reviews_modal');
+          modal_container.style.animation = "fadeOut .2s ease-in-out forwards";
+          const body = document.querySelector('body');
+          body.style.pointerEvents = 'auto';
+          body.style.overflow = "scroll";
+        }
+
+
         let slideIndex = 0;
         showSlides();
 
