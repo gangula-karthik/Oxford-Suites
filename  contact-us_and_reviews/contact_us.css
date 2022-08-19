@@ -545,8 +545,8 @@ nav h1{
   .nav-links{
       position: fixed;
       right: 0px;
-      height: 91vh;
-      top: 9.8vh; 
+      height: 92vh;
+      top: 8.8vh; 
       background-color:rgba(0, 0, 0, 0.8);
       backdrop-filter: blur(30px);
       display: flex;

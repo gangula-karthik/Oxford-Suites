@@ -225,6 +225,7 @@ img {
   user-select: none;
 }
 
+
 /* Position the "next button" to the right */
 .next {
   right: 5%;
@@ -233,7 +234,7 @@ img {
 
 .prev {
   left: 5%;
-  border-radius: 3px 0 0 3px;
+  border-radius: 0px 3px 3px 0px;
 }
 
 
