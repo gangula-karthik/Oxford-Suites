@@ -32,9 +32,10 @@
     </div>
   </nav>
 <body>
+  <h1 class="sectionTitle">Reservation Summary</h1>
   <div id="reservation_data"></div>
   <div class="confirmation_buttons">
-    <button class="actions_btn" onclick="resubmit()">RESUBMIT</button>
+    <button class="actions_btn" onclick="resubmit()">CANCEL</button>
     <button class="actions_btn" onclick="confirmreservation()">CONFIRM</button>
   </div>
 
@@ -65,17 +66,12 @@ for (var i=0; i < formArray.length; ++i) {
 reservation = reservation.replaceAll("=", ": ");
 
 function resubmit(){
-  var confirmation = "Are you sure ? \nAll your data will be lost";
-  if (confirm(confirmation) == true){
     window.location.href = "dining_reservation.html";
-  } else {
-    return;
-  }
 }
 
 function confirmreservation(){
   window.alert("Your reservation has been successfully submitted \nYou will be directed to the homepage.");
-  window.location.href = "index.html";
+  window.location.href = "dining.html";
 }
 
 // responsive navbar animations
