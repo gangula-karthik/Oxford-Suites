@@ -51,8 +51,9 @@
         <li>
           <h1>The Oxford Suites Singapore</h1>
         </li>
-        <li style="color: white;padding-left: 10px;">Rating: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-            class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></li>
+        <li style="color: white;padding-left: 10px;">Rating: <i class="fa-solid fa-star"></i><i
+            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+            class="fa-regular fa-star-half-stroke"></i></li>
         <li id="reviews_link"><a style="color: white;" id="open" onclick="click_modal()">Leave a review</a></li>
       </ul>
       <!-- left nav -->
@@ -63,10 +64,11 @@
           </lord-icon><span style="color: white; font-weight:300;font-size: 14px;"> +65 9880-8144</span>
         </li>
         <li id="maps"><a style="color:white;"
-          href="https://www.google.com/maps/place/Oxford+Suites/@1.3156842,103.8503361,17z/data=!3m1!4b1!4m5!3m4!1s0x31da191c4d132049:0xf7a575083db5f2a!8m2!3d1.3156756!4d103.8525277"
-          target="_blank"><i class="fa-solid fa-location-dot fa-lg"></i> VIEW MAP</a>
-      </li>
-      <li style="padding-right: 10px;"><button onclick="button_pop_out()">RESERVE <i class="fa-solid fa-angle-down"></i></button></li>
+            href="https://www.google.com/maps/place/Oxford+Suites/@1.3156842,103.8503361,17z/data=!3m1!4b1!4m5!3m4!1s0x31da191c4d132049:0xf7a575083db5f2a!8m2!3d1.3156756!4d103.8525277"
+            target="_blank"><i class="fa-solid fa-location-dot fa-lg"></i> VIEW MAP</a>
+        </li>
+        <li style="padding-right: 10px;"><button onclick="button_pop_out()">RESERVE <i
+              class="fa-solid fa-angle-down"></i></button></li>
       </ul>
     </section>
 
@@ -95,50 +97,53 @@
         </div>
       </div>
     </section>
+    <div class="modal_container">
+      <div class="reviews_modal">
+        <div>
+          <h1>REVIEWS AND RATINGS <span id="close" style="float:right;" class="material-symbols-outlined"><a
+                onclick="close_reviews()">cancel</a></span></h1>
+        </div>
+        <hr>
 
-    <div class="reviews_modal">
-      <div> 
-        <h1>REVIEWS AND RATINGS <span id="close" style="float:right;" class="material-symbols-outlined"><a onclick="close_reviews()">cancel</a></span></h1>
-    </div>
-    <hr>
+        <h2>How was your experience ?</h2>
 
-    <h2>How was your experience ?</h2>
-
-    <form method="get" action="reviews_form_processor.html">
-        <table style="margin-left:auto;margin-right:auto;">
+        <form method="get" action="reviews_form_processor.html">
+          <table style="margin-left:auto;margin-right:auto;">
             <tr>
-                <td><label for="reviews">Rating: </label></td>
-                <td><div class="rate">
-                    <input type="radio" id="star5" name="Rating" value="5" />
-                    <label for="star5" title="text">5 stars</label>
-                    <input type="radio" id="star4" name="Rating" value="4" />
-                    <label for="star4" title="text">4 stars</label>
-                    <input type="radio" id="star3" name="Rating" value="3" />
-                    <label for="star3" title="text">3 stars</label>
-                    <input type="radio" id="star2" name="Rating" value="2" />
-                    <label for="star2" title="text">2 stars</label>
-                    <input type="radio" id="star1" name="Rating" value="1" />
-                    <label for="star1" title="text">1 star</label>
-                </div></td>
+              <td><label for="reviews">Rating: </label></td>
+              <td>
+                <div class="rate">
+                  <input type="radio" id="star5" name="Rating" value="5" />
+                  <label for="star5" title="text">5 stars</label>
+                  <input type="radio" id="star4" name="Rating" value="4" />
+                  <label for="star4" title="text">4 stars</label>
+                  <input type="radio" id="star3" name="Rating" value="3" />
+                  <label for="star3" title="text">3 stars</label>
+                  <input type="radio" id="star2" name="Rating" value="2" />
+                  <label for="star2" title="text">2 stars</label>
+                  <input type="radio" id="star1" name="Rating" value="1" />
+                  <label for="star1" title="text">1 star</label>
+                </div>
+              </td>
             </tr>
             <tr>
-                <td><label for="name">Name: </label></td>
-                <td><input type="text" name="name" placeholder="Enter your name"  value="" required></td>
+              <td><label for="name">Name: </label></td>
+              <td><input type="text" name="name" placeholder="Enter your name" value="" required></td>
             </tr>
             <tr>
-                <td><label for="name">Email: </label></td>
-                <td><input type="email" name="email" placeholder="Enter your email"  value="" required></td>
+              <td><label for="name">Email: </label></td>
+              <td><input type="email" name="email" placeholder="Enter your email" value="" required></td>
             </tr>
             <tr>
-                <td><label for="name">Review: </label></td>
-                <td><textarea name="review" style="width: 400px; height: 70px;" value="" required></textarea></td>
+              <td><label for="name">Review: </label></td>
+              <td><textarea name="review" style="width: 400px; height: 70px;" value="" required></textarea></td>
             </tr>
             <tr>
-                <td></td>
-                <td><input onclick="createClick()" type="submit" value="POST" id="submit_review"rowspan="2"></td>
+              <td></td>
+              <td><input onclick="createClick()" type="submit" value="POST" id="submit_review" rowspan="2"></td>
             </tr>
-        </table>
-</div>
+          </table>
+      </div>
     </div>
 
     <div class="mainCon">
@@ -165,19 +170,24 @@
         <span class="dot"></span>
       </div>
       <script>
-        function click_modal(){
-          const modal_container = document.querySelector('.reviews_modal');
+        function click_modal() {
+          const modal = document.querySelector('.reviews_modal');
+          modal.style.display = "block";
+          modal.style.animation = "fade .2s ease-in-out";
+          modal.style.pointerEvents = 'auto';
+          const modal_container = document.querySelector('.modal_container');
           modal_container.style.display = "block";
-          modal_container.style.animation = "fade .2s ease-in-out";
           const body = document.querySelector('body');
           body.style.pointerEvents = 'none';
           body.style.overflow = "hidden";
-          modal_container.style.pointerEvents = 'auto';
         }
-        function close_reviews(){
-          const modal_container = document.querySelector('.reviews_modal');
-          modal_container.style.animation = "fadeOut .2s ease-in-out forwards";
+        function close_reviews() {
+          const modal = document.querySelector('.reviews_modal');
+          const modal_container = document.querySelector('.modal_container');
+          modal.style.animation = "fadeOut .2s ease-in-out forwards";
           const body = document.querySelector('body');
+          modal.style.pointerEvents = 'none';
+          modal_container.style.display = "none";
           body.style.pointerEvents = 'auto';
           body.style.overflow = "scroll";
         }
