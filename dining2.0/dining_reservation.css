@@ -203,8 +203,7 @@ nav h1{
     display:none;
   }
 
-  
-  
+
   /*removing the scroll bar*/
   ::-webkit-scrollbar{
     display:none;
