@@ -273,6 +273,14 @@ nav h1 {
   }
 }
 
+.sectionTitle{
+  font-family:'Bodoni moda', sans-serif; 
+  font-size: 3em;
+  text-align: center;
+  margin-top:-100px;
+  margin-bottom: 4%;
+}
+
 
 .down-arrow {
   position: absolute;
@@ -312,7 +320,7 @@ nav h1 {
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   justify-items: center;
-  margin-bottom: 10%;
+  padding-bottom: 200px;
   gap: 3%;
   overflow: visible;
 }
@@ -323,6 +331,7 @@ nav h1 {
     grid-template-rows: 1fr 1fr 1fr;
     overflow: visible;
     margin-bottom: 30%;
+    padding-bottom: 50px;
   }
 }
 
