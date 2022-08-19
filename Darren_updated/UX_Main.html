@@ -77,7 +77,7 @@
         <div class="input grid">
           <div class="box">
             <label>Check-in:</label>
-            <input type="date" id="booking_in_date">
+            <input type="date" onchange="setCheckOutDateMin()" id="booking_in_date">
           </div>
           <div class="box">
             <label>Check-out:</label>
@@ -192,6 +192,11 @@
           modal_container.style.display = "none";
           body.style.pointerEvents = 'auto';
           body.style.overflow = "scroll";
+        }
+
+        function setCheckOutDateMin() {
+          var check_out_date = String(document.getElementById("booking_in_date").value);
+          document.getElementById("booking_out_date").setAttribute("min", check_out_date);
         }
 
 
