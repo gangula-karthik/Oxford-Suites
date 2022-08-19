@@ -40,97 +40,6 @@
 			<div class="progress-bar" id="myBar"></div>
 		  </div>
 	</nav>
-	<section class="reviews-and-book-now">
-		<ul>
-			<li style="float:left;text-align:left;"><h1>The Oxford Suites Singapore</h1></li>
-			<li style="float:left;text-align:left;margin-top: 1.76%;">4.3 stars</li>
-			<li style="float:left;text-align:left;margin-top: 1.76%; text-decoration: none;"><a style="color: rgb(255, 255, 255);" id="open">Leave a review</a></li>
-			<li><button onclick="button_pop_out()">RESERVE <i class="fa-solid fa-angle-down"></i></button></li>
-			<li>
-				<lord-icon
-					src="https://cdn.lordicon.com/hcndxtmn.json"
-					trigger="hover"
-					colors="primary:#ffffff"
-					style="width:20px;height:20px">
-				</lord-icon><span style="color: white; font-weight:300;font-size: 14px;"> +65 9880-8144</span></li>
-			<li><span style="color: white;"class="material-symbols-outlined">location_on</span><a style="color:white;"href="https://www.google.com/maps/place/Oxford+Suites/@1.3156842,103.8503361,17z/data=!3m1!4b1!4m5!3m4!1s0x31da191c4d132049:0xf7a575083db5f2a!8m2!3d1.3156756!4d103.8525277" target="_blank">VIEW MAP</a></li>
-		</ul>
-	</section>
-
-	
-	<div class="modal-container">
-        <div class="modal">
-            <div> 
-                <h1>REVIEWS AND RATINGS <span id="close" style="float:right;" class="material-symbols-outlined">cancel</span></h1>
-            </div>
-            <hr>
-
-            <h2>How was your experience ?</h2>
-
-            <form method="get" action="reviews_form_processor.html">
-                <table style="margin-left:auto;margin-right:auto;">
-                    <tr>
-                        <td><label for="reviews">Rating: </label></td>
-                        <td><div class="rate">
-                            <input type="radio" id="star5" name="Rating" value="5" />
-                            <label for="star5" title="text">5 stars</label>
-                            <input type="radio" id="star4" name="Rating" value="4" />
-                            <label for="star4" title="text">4 stars</label>
-                            <input type="radio" id="star3" name="Rating" value="3" />
-                            <label for="star3" title="text">3 stars</label>
-                            <input type="radio" id="star2" name="Rating" value="2" />
-                            <label for="star2" title="text">2 stars</label>
-                            <input type="radio" id="star1" name="Rating" value="1" />
-                            <label for="star1" title="text">1 star</label>
-                        </div></td>
-                    </tr>
-                    <tr>
-                        <td><label for="name">Name: </label></td>
-                        <td><input type="text" name="name" placeholder="Enter your name"  value="" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="name">Email: </label></td>
-                        <td><input type="email" name="email" placeholder="Enter your email"  value="" required></td>
-                    </tr>
-                    <tr>
-                        <td><label for="name">Review: </label></td>
-                        <td><textarea name="review" style="width: 400px; height: 70px;" value="" required></textarea></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><input onclick="createClick()" type="submit" value="POST" rowspan="2"></td>
-                    </tr>
-                </table>
-        </div>
-    </div>
-
-
-
-	<section class="book">
-		<div class="container flex">
-		  <div class="input grid">
-			<div class="box">
-			  <label>Check-in:</label>
-			  <input type="date" id="booking_date">
-			</div>
-			<div class="box">
-			  <label>Check-out:</label>
-			  <input type="date" id="booking_date">
-			</div>
-			<div class="box">
-			  <label>Adults:</label> <br>
-			  <input type="number" placeholder="0" max="9" min="0">
-			</div>
-			<div class="box">
-			  <label>Children:</label> <br>
-			  <input type="number" placeholder="0" max="9" min="0">
-			</div>
-		  </div>
-		  <div class="search">
-			<input type="submit" value="VIEW RATES">
-		  </div>
-		</div>
-	  </section>
 
 
 	<div class="row video-background">
@@ -401,7 +310,7 @@
 
 
 	<!--- Script Source Files -->
-	<script src="app.js"></script>
+	<script src="dining.js"></script>
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
 	<!--- End of Script Source Files -->

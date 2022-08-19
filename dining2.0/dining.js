@@ -21,6 +21,17 @@ const navSlide = () => {
 
 }
 
+navSlide();
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
 // collapsing extended navbar on scroll
 window.addEventListener("scroll", () => {
     // amount that the user has scrollen down
@@ -57,22 +68,6 @@ document.querySelector(".reviews-and-book-now ul li button").onclick = function(
     }
 };
 
-
-navSlide();
-
-
-// const open = document.getElementById('open');
-//         const modal_container = document.querySelector('.modal-container');
-//         const close = document.getElementById('close');
-
-//         open.addEventListener('click', () => {
-//             modal_container.classList.add('show');
-//         } );
-
-
-//         close.addEventListener('click', () => {
-//             modal_container.classList.remove('show');
-//         } );
 
 var date = new Date();
 var tdate = date.getDate();
