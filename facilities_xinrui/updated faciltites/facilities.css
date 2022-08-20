@@ -2302,7 +2302,6 @@ h2 {
   text-transform        : uppercase;
   font-family           : "Inter" !important;
   font-size             : 35px;
-  font-style            : italic;
   font-weight           : 500 !important;
   grid-template-columns : 1fr;
 }
@@ -2635,6 +2634,7 @@ h4 {
 }
 
 .buttonright {
+  font-family: Inter, sans-serif;
   box-sizing       : border-box;
   width            : auto;
   width            : 180px;
@@ -2660,7 +2660,7 @@ h4 {
   height        : 40px;
   color         : black;
   border-radius : 100px;
-  background    : #e2ca81;
+  background-color   : #e2ca81 !important;
 }
 
 .name {

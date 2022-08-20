@@ -59,7 +59,7 @@ for (var i=0; i < formArray.length; ++i) {
     reservation += formArray[i] + " ";
   }
   else if (i === 4) {
-    reservation += formArray[i].slice(13,-1) + "<br />";
+    reservation += formArray[i].slice(13, formArray[i].length) + "<br />";
   } else {
     reservation += formArray[i] + "<br />";
   }

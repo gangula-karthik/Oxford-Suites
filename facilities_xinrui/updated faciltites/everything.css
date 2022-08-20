@@ -37,18 +37,24 @@ body {
 }
 
 h1.footer__logo{
-  font-family: 'Bodoni moda'!important;
+  font-family: 'Bodoni moda', serif!important;
   font-size: 40px;
+  font-weight: 700 !important;
+}
+
+a:hover{
+  color: white !important;
 }
 
 .footer__logo a {
   color: white;
 }
 
- .footer_logo a:link, a:hover, a:active, a:visited{
-  text-decoration: none;
-  color:white;
-}
+.footer_logo a:link, a:hover, a:active{
+  text-decoration: none !important;
+  color:#ffffff !important;
+} 
+
 .footer__addr h2 {
   margin-top: 1.3em;
   font-size: 15px;
@@ -93,7 +99,7 @@ h1.footer__logo{
   max-width: max-content;
   background-color: #e2ca81;
   border-radius: 100px;
-  color:rgb(0, 0, 0);
+  color:rgb(0, 0, 0) !important;
   line-height: 0;
   margin: 0.6em 0;
   font-size: 1rem;
@@ -110,7 +116,7 @@ h1.footer__logo{
   max-width: max-content;
   background-color: #e2ca81;
   border-radius: 100px;
-  color:rgb(0, 0, 0);
+  color:rgb(0, 0, 0) !important;
   line-height: 0;
   margin: 0.6em 0;
   font-size: 1rem;

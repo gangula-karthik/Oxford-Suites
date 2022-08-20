@@ -29,12 +29,13 @@
         <h1>OXFORD SUITES</h1>
       </div>
       <ul class="nav-links ml-auto">
-        <li><a class="underline-hover-effect rooms text-decoration-none" href="#rooms">Rooms</a></li>
-        <li><a class="underline-hover-effect dining text-decoration-none" href="index.html">Dining</a></li>
-        <li><a class="underline-hover-effect facilities text-decoration-none" href="#facilities">Facilities</a></li>
-        <li><a class="underline-hover-effect events text-decoration-none" href="#events">Events</a></li>
-        <li><a class="underline-hover-effect contact text-decoration-none" href="#contact">Contact Us</a></li>
-        <li><a class="gallery text-decoration-none" href="#gallery"><span style="color: white; font-size: 30px;"
+        <li><a class="underline-hover-effect rooms text-decoration-none" href="UX_Offers.html">Offers</a></li>
+        <li><a class="underline-hover-effect rooms text-decoration-none" href="UX_Rooms&Suites.html">Rooms</a></li>
+        <li><a class="underline-hover-effect dining text-decoration-none" href="dining.html">Dining</a></li>
+        <li><a class="underline-hover-effect facilities text-decoration-none" href="facilititiespage1.html">Facilities</a></li>
+        <li><a class="underline-hover-effect events text-decoration-none" href="newevents.html">Events</a></li>
+        <li><a class="underline-hover-effect contact text-decoration-none" href="contact_us.html">Contact Us</a></li>
+        <li><a class="gallery text-decoration-none" href="UX_Login.html"><span style="color: white; font-size: 30px;"
               class="material-symbols-outlined">
               account_circle
             </span></a></li>
@@ -93,7 +94,7 @@
           </div>
         </div>
         <div class="search">
-          <input type="submit" value="VIEW RATES">
+          <button type="submit" onclick="resubmit()">VIEW RATES</button>
         </div>
       </div>
     </section>
@@ -170,6 +171,12 @@
         <span class="dot"></span>
       </div>
       <script>
+
+      function resubmit(){
+    window.location.href = "Booking_Form.html";
+}
+onclick="resubmit()"
+
         function click_modal() {
           const modal = document.querySelector('.reviews_modal');
           modal.style.display = "block";
@@ -371,6 +378,13 @@
       <span class="dot2" onclick="currentSlide2(4)"></span>
     </div>
     <script>
+      function learn_more1() {
+        window.location.href = "newevents.html";
+      }
+
+      function learn_more2(){
+        window.location.href = "UX_Rooms&Suites.html";
+      }
       let slidesIndex = 1;
       showSlides2(slidesIndex);
 
@@ -414,7 +428,7 @@
         <div class="content-body2">A luxurious sanctuary in the heart of the city awaits. We look forward to welcoming
           all fully vaccinated international guests to a relaxing stay with our signature Asian Hospitality. Travel and
           stay with us with a greater peace of mind</div>
-        <p><button class="std-button" type="submit">Learn more</button></p>
+        <p><button class="std-button" type="submit" onclick="learn_more1()">Learn more</button></p>
       </div>
     </div>
     <div class="content-body-con2">
@@ -422,7 +436,7 @@
         <div class="content-header2"><strong>Staycation with us</strong></div>
         <div class="content-body3">The perfect staycation escape awaits with our hotel's lush open gardens, unparalleled
           culinary experiences, vibrant family facilities, pampering spa treatments and more.​</div>
-        <p><button class="std-button" type="submit">Learn more</button></p>
+        <p><button class="std-button" type="submit" onclick="learn_more2()">Learn more</button></p>
       </div>
       <div class="image3-con">
         <img class="content-image3" src="image3.jpg">
@@ -461,72 +475,72 @@
     <div class="whitespace"></div>
 
     <footer class="footer">
-      <div class="footer__addr">
-        <h1 class="footer__logo">OXFORD SUITES</h1>
+  		<div class="footer__addr">
+  			<h1 class="footer__logo"><a href="UX_Main.html">OXFORD SUITES</a></h1>
 
-        <h2>Location</h2>
+  			<h2>Location</h2>
 
-        <address>
-          One Raffles Place, Singapore 048616<br><br>
+  			<address>
+  			  One Raffles Place, Singapore 048616<br><br>
 
-          <a class="footer__btn" href="mailto:224627G@mymail.nyp.edu.sg">Email Us</a>
-        </address>
-      </div>
+  			  <a class="footer__btn" href="mailto:224627G@mymail.nyp.edu.sg" style>Email Us </a>
+  			</address>
+  		  </div>
 
-      <ul class="footer__nav">
-        <li class="nav__item">
-          <h2 class="nav__title">Rooms & Suites</h2>
-          <!-- Optional content -->
-          <ul class="nav__ul">
-            <li>
-              <a href="#">Room Bookings</a>
-            </li>
+  		  <ul class="footer__nav">
+  			<li class="nav__item">
+  			  <h2 class="nav__title">Rooms & Suites</h2>
+  		<!-- Optional content -->
+  			  <ul class="nav__ul">
+  				<li>
+  				  <a href="Booking_Form.html">Room Bookings</a>
+  				</li>
 
-            <li>
-              <a href="#">Suite Gallery</a>
-            </li>
+  				<li>
+  				  <a href="UX_Rooms&Suites.html">Suite Gallery</a>
+  				</li>
 
-            <li>
-              <a href="#">Meeting & Events</a>
-            </li>
-          </ul>
-        </li>
-        <!-- Optional content -->
-        <li class="nav__item">
-          <h2 class="nav__title">Others</h2>
+  				<li>
+  				  <a href="newevents.html">Weddings & Events</a>
+  				</li>
+  			  </ul>
+  			</li>
+  		<!-- Optional content -->
+  			<li class="nav__item">
+  			  <h2 class="nav__title">Others</h2>
 
-          <ul class="nav__ul">
-            <li>
-              <a href="#">Gallery</a>
-            </li>
+  			  <ul class="nav__ul">
+  				<li>
+  				  <a href="facilititiespage1.html">Facilities</a>
+  				</li>
 
-            <li>
-              <a href="#">Dining</a>
-            </li>
+  				<li>
+  				  <a href="dining.html">Dining</a>
+  				</li>
 
-            <li>
-              <a href="#">Offers</a>
-            </li>
-          </ul>
-        </li>
+  				<li>
+  				  <a href="UX_Offers.html">Offers</a>
+  				</li>
+  			  </ul>
+  			  </li>
 
-        <li class="nav__item">
-          <h3 class="nav__title">Legal</h3>
+  			<li class="nav__item">
+  			  <h3 class="nav__title">Legal</h3>
 
-          <ul class="nav__ul">
-            <li>
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="#">Terms of Use</a>
-            </li>
-            <li>
-              <a href="#">Careers</a>
-            </li>
-          </ul>
-        </li>
-  </body>
-  </footer>
+  			  <ul class="nav__ul">
+  				<li>
+  				  Privacy Policy
+  				</li>
+  				<li>
+  				  Terms of Use
+  				</li>
+  				<li>
+  				  Careers
+  				</li>
+  			  </ul>
+  			</li>
+
+  	</footer>
 </main>
 
 </html>

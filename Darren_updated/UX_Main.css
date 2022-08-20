@@ -6,7 +6,7 @@ body {
   color: black;
   margin: 0;
   font-size: 12px;
-  background: white smoke;
+  background: whitesmoke;
   overscroll-behavior: none;
   font-family: "Inter", sans-serif;
   display: block;
@@ -167,6 +167,7 @@ img {
   font-family: "Inter", serif;
   font-size: 22px;
   text-align: center;
+  margin-top: 2%;
 }
 
 /* Slideshow container */
@@ -514,7 +515,7 @@ img {
   margin: 0% 10% 0% 10%;
 }
 
-/* 
+/*
 nav ul {
   list-style-type: none;
   margin: 0px;
@@ -532,7 +533,7 @@ nav ul {
   margin-right: 10px;
   color: white;
 } */
-/* 
+/*
 li a {
   color: white;
   text-align: center;
@@ -895,7 +896,7 @@ nav h1 {
   z-index: 15;
   height: 100vh;
   width: 100vw;
-  display: none; 
+  display: none;
 }
 
 #close {
@@ -1073,13 +1074,14 @@ input {
   width: 20%;
 }
 
-.book .search input {
+.book .search button {
   background: none;
   border: none;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
-  padding-top: 55px;
+  padding: 20px;
+  margin-top: 35px;
 }
 
 
@@ -1102,6 +1104,61 @@ input {
   color: #BBA14F;
 }
 
+@media (max-width: 1200px) {
+  .title-content {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-image1 {
+    margin: 0 10% 0 10%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-con1 {
+    text-align: center;
+    margin: 2% 30% 0 30%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .text {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-body-con1 {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-image2 {
+    margin: 0 5% 0 5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-con2, .content-con3 {
+    padding: 7% 0 7% 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-body-con2 {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-image3 {
+    margin: 0 10% 0 0;
+    align-items: center;
+  }
+}
 
 /* footer of the website */
 .footer {
@@ -1136,10 +1193,11 @@ input {
   background-size: 100%;
 }
 
- .footer_logo a:link, a:hover, a:active, a:visited{
-  text-decoration: none;
-  color:#ffffff;
+.footer_logo a:link, a:hover, a:active{
+  text-decoration: none !important;
+  color:#ffffff !important;
 }
+
 .footer__addr h2 {
   margin-top: 1.3em;
   font-size: 15px;
@@ -1235,7 +1293,7 @@ input {
 }
 
 .nav__ul a {
-  color: #999;
+  color: whitesmoke;
 }
 
 .nav__ul--extra {
@@ -1243,12 +1301,6 @@ input {
   column-gap: 1.25em;
 }
 
-
-
-
-.heart {
-  color: #999;
-}
 
 
 /*media queries*/
