@@ -6,6 +6,7 @@
 
 
 
+
 ## INTRODUCTION
 During my first semester at Nanyang Polytechnic, my team and I undertook a project to create a website for a luxury hotel, which we named Oxford Suites. Each member of the team was responsible for a different aspect of the project: 
 1. Karthik was responsible for the Dining Pages, Navbar (including extended navbar on homepage), Contact Us page, and hosting
