@@ -1,4 +1,4 @@
-# hotel_project
+# NYP UX DESIGN PROJECT (OXFORD SUITES)
 
 ## INTRODUCTION
 During my first semester at Nanyang Polytechnic, my team and I undertook a project to create a website for a luxury hotel, which we named Oxford Suites. Each member of the team was responsible for a different aspect of the project: 
