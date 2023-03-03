@@ -1,5 +1,11 @@
 # NYP UX DESIGN PROJECT (OXFORD SUITES)
 
+<p align="center">
+  <img width="454" alt="Screenshot 2023-03-03 at 8 17 39 PM" src="https://user-images.githubusercontent.com/56480632/222718233-de30fd5c-bbc7-4443-98e8-ce124729480e.png">
+</p>
+
+
+
 ## INTRODUCTION
 During my first semester at Nanyang Polytechnic, my team and I undertook a project to create a website for a luxury hotel, which we named Oxford Suites. Each member of the team was responsible for a different aspect of the project: 
 1. Karthik was responsible for the Dining Pages, Navbar (including extended navbar on homepage), Contact Us page, and hosting
