@@ -1,7 +1,7 @@
 # NYP UX DESIGN PROJECT (OXFORD SUITES)
 
 <p align="center">
-  <a href="https://oxford-suites.netlify.app/"><img width="454" alt="Screenshot 2023-03-03 at 8 17 39 PM" src="https://user-images.githubusercontent.com/56480632/222718233-de30fd5c-bbc7-4443-98e8-ce124729480e.png"></a>
+  <a href="https://oxford-suites.netlify.app/" target="_blank"><img width="454" alt="Screenshot 2023-03-03 at 8 17 39 PM" src="https://user-images.githubusercontent.com/56480632/222718233-de30fd5c-bbc7-4443-98e8-ce124729480e.png"></a>
 </p>
 
 
