@@ -4,7 +4,7 @@
   <a href="https://oxford-suites.netlify.app/" target="_blank"><img width="454" alt="Screenshot 2023-03-03 at 8 17 39 PM" src="https://user-images.githubusercontent.com/56480632/222718233-de30fd5c-bbc7-4443-98e8-ce124729480e.png"></a>
 </p>
 
-<div style="justify-content: center;">
+<p align="center">
   <a href="https://app.netlify.com/sites/oxford-suites/deploys">
     <img src="https://api.netlify.com/api/v1/badges/71f06492-22e8-4e44-abc5-5baf588d8d18/deploy-status" alt="Netlify Status">
   </a>
