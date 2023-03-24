@@ -2,12 +2,8 @@
 
 <p align="center">
   <a href="https://oxford-suites.netlify.app/" target="_blank"><img width="454" alt="Screenshot 2023-03-03 at 8 17 39 PM" src="https://user-images.githubusercontent.com/56480632/222718233-de30fd5c-bbc7-4443-98e8-ce124729480e.png"></a>
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/71f06492-22e8-4e44-abc5-5baf588d8d18/deploy-status)](https://app.netlify.com/sites/oxford-suites/deploys)
 </p>
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/71f06492-22e8-4e44-abc5-5baf588d8d18/deploy-status)](https://app.netlify.com/sites/oxford-suites/deploys)
-![image]({https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E})
-![image]({https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white})
-![image]({https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white})
 
 
 
